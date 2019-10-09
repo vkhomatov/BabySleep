@@ -143,4 +143,3 @@ final class RealmAccess<T> where T: Object {
         self.token?.invalidate()
     }
 }
-

@@ -242,6 +242,7 @@
 				92578BD0234E57D50001510D /* Frameworks */,
 				92578BD1234E57D50001510D /* Resources */,
 				4DB3FE42C9D9FD7516CDF95A /* [CP] Embed Pods Frameworks */,
+				92F6C640234EA53700B17DB4 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -345,6 +346,23 @@
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BabySleep/Pods-BabySleep-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
+		};
+		92F6C640234EA53700B17DB4 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n\"${PODS_ROOT}/SwiftLint/swiftlint\"\n";
 		};
 		976F7B9BEB7F362493B0A62D /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
