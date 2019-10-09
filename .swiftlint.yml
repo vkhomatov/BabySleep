@@ -1,0 +1,37 @@
+disabled_rules:
+  - line_length
+#  - switch_case_alignment
+#  - function_body_length
+#  - type_body_length
+  -  identifier_name
+opt_in_rules:
+  - empty_count
+  - force_unwrapping
+  - private_outlet
+excluded: 
+  - Pods
+  - Dental Plan/Application/Common/AppDelegate.swift
+vertical_whitespace:
+  max_empty_lines: 2
+trailing_whitespace:
+  ignores_empty_lines: true
+line_length:
+  ignores urls: true
+  ignores comments: true
+file_length:
+  warning: 800
+  ignore_comment_only_lines: true
+identifier_name:
+  min_length:
+    warning: 2
+cyclomatic_complexity:
+  ignores_case_statements: true
+large_tuple:
+  warning: 3
+  error: 4
+type_body_length:
+  warning: 400
+  error: 600
+function_body_length:
+  warning: 100
+  error: 120
