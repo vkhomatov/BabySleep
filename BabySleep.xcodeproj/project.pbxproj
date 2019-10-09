@@ -77,6 +77,8 @@
 		92578BD5234E57D50001510D /* BabySleep */ = {
 			isa = PBXGroup;
 			children = (
+				92F6C62C234E7C5600B17DB4 /* Application */,
+				92F6C635234E7DAE00B17DB4 /* Resources */,
 				92578BD6234E57D50001510D /* AppDelegate.swift */,
 				92578BD8234E57D50001510D /* SceneDelegate.swift */,
 				92578BDA234E57D50001510D /* ViewController.swift */,
@@ -94,6 +96,84 @@
 				92578BEF234E57D70001510D /* Info.plist */,
 			);
 			path = BabySleepTests;
+			sourceTree = "<group>";
+		};
+		92F6C62C234E7C5600B17DB4 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				92F6C62D234E7C7800B17DB4 /* Common */,
+				92F6C634234E7D6800B17DB4 /* Flow */,
+				92F6C633234E7D5900B17DB4 /* Entities */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		92F6C62D234E7C7800B17DB4 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				92F6C62E234E7C9B00B17DB4 /* Extensions */,
+				92F6C62F234E7CAF00B17DB4 /* Lib */,
+				92F6C632234E7D0800B17DB4 /* DBAccess */,
+				92F6C631234E7CF000B17DB4 /* Coordinators */,
+				92F6C630234E7CE200B17DB4 /* Factories */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		92F6C62E234E7C9B00B17DB4 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		92F6C62F234E7CAF00B17DB4 /* Lib */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Lib;
+			sourceTree = "<group>";
+		};
+		92F6C630234E7CE200B17DB4 /* Factories */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Factories;
+			sourceTree = "<group>";
+		};
+		92F6C631234E7CF000B17DB4 /* Coordinators */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Coordinators;
+			sourceTree = "<group>";
+		};
+		92F6C632234E7D0800B17DB4 /* DBAccess */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DBAccess;
+			sourceTree = "<group>";
+		};
+		92F6C633234E7D5900B17DB4 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		92F6C634234E7D6800B17DB4 /* Flow */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Flow;
+			sourceTree = "<group>";
+		};
+		92F6C635234E7DAE00B17DB4 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
