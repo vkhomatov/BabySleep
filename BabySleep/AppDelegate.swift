@@ -20,6 +20,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         } else {
             let window = UIWindow(frame: UIScreen.main.bounds)
             self.window = window
+
+            let vc = ViewController()
+            window.rootViewController = vc
         }
         
         return true
