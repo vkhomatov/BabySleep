@@ -10,9 +10,7 @@
 		214F2DB0C9C0C1F26A8E3E7D /* Pods_BabySleepTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A5DE871D5B07CDA17D165BA /* Pods_BabySleepTests.framework */; };
 		611ECF82420A4B4A8D704322 /* Pods_BabySleep.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF6852958183FD878FBB0D77 /* Pods_BabySleep.framework */; };
 		92578BD7234E57D50001510D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92578BD6234E57D50001510D /* AppDelegate.swift */; };
-		92578BD9234E57D50001510D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92578BD8234E57D50001510D /* SceneDelegate.swift */; };
 		92578BDB234E57D50001510D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92578BDA234E57D50001510D /* ViewController.swift */; };
-		92578BDE234E57D50001510D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92578BDC234E57D50001510D /* Main.storyboard */; };
 		92578BE0234E57D70001510D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 92578BDF234E57D70001510D /* Assets.xcassets */; };
 		92578BEE234E57D70001510D /* BabySleepTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92578BED234E57D70001510D /* BabySleepTests.swift */; };
 /* End PBXBuildFile section */
@@ -34,9 +32,7 @@
 		8D1ACA6541F2205D401701CF /* Pods-BabySleepTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BabySleepTests.debug.xcconfig"; path = "Target Support Files/Pods-BabySleepTests/Pods-BabySleepTests.debug.xcconfig"; sourceTree = "<group>"; };
 		92578BD3234E57D50001510D /* BabySleep.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BabySleep.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		92578BD6234E57D50001510D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		92578BD8234E57D50001510D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		92578BDA234E57D50001510D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		92578BDD234E57D50001510D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		92578BDF234E57D70001510D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		92578BE4234E57D70001510D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		92578BE9234E57D70001510D /* BabySleepTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BabySleepTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -92,9 +88,7 @@
 				92F6C62C234E7C5600B17DB4 /* Application */,
 				92F6C635234E7DAE00B17DB4 /* Resources */,
 				92578BD6234E57D50001510D /* AppDelegate.swift */,
-				92578BD8234E57D50001510D /* SceneDelegate.swift */,
 				92578BDA234E57D50001510D /* ViewController.swift */,
-				92578BDC234E57D50001510D /* Main.storyboard */,
 				92578BDF234E57D70001510D /* Assets.xcassets */,
 				92578BE4234E57D70001510D /* Info.plist */,
 			);
@@ -294,7 +288,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				92578BE0234E57D70001510D /* Assets.xcassets in Resources */,
-				92578BDE234E57D50001510D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -395,7 +388,6 @@
 			files = (
 				92578BDB234E57D50001510D /* ViewController.swift in Sources */,
 				92578BD7234E57D50001510D /* AppDelegate.swift in Sources */,
-				92578BD9234E57D50001510D /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -416,17 +408,6 @@
 			targetProxy = 92578BEA234E57D70001510D /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		92578BDC234E57D50001510D /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				92578BDD234E57D50001510D /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		92578BF0234E57D70001510D /* Debug */ = {
