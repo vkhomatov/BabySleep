@@ -13,6 +13,10 @@
 		92578BDB234E57D50001510D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92578BDA234E57D50001510D /* ViewController.swift */; };
 		92578BE0234E57D70001510D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 92578BDF234E57D70001510D /* Assets.xcassets */; };
 		92578BEE234E57D70001510D /* BabySleepTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92578BED234E57D70001510D /* BabySleepTests.swift */; };
+		92F6C637234EA2B000B17DB4 /* RealmAccess.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92F6C636234EA2B000B17DB4 /* RealmAccess.swift */; };
+		92F6C63A234EA34800B17DB4 /* Identifiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92F6C639234EA34800B17DB4 /* Identifiable.swift */; };
+		92F6C63D234EA3BC00B17DB4 /* AlertCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92F6C63C234EA3BC00B17DB4 /* AlertCenter.swift */; };
+		92F6C63F234EA3F400B17DB4 /* NotificationAlertType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92F6C63E234EA3F400B17DB4 /* NotificationAlertType.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +42,10 @@
 		92578BE9234E57D70001510D /* BabySleepTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BabySleepTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		92578BED234E57D70001510D /* BabySleepTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BabySleepTests.swift; sourceTree = "<group>"; };
 		92578BEF234E57D70001510D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		92F6C636234EA2B000B17DB4 /* RealmAccess.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmAccess.swift; sourceTree = "<group>"; };
+		92F6C639234EA34800B17DB4 /* Identifiable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Identifiable.swift; sourceTree = "<group>"; };
+		92F6C63C234EA3BC00B17DB4 /* AlertCenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertCenter.swift; sourceTree = "<group>"; };
+		92F6C63E234EA3F400B17DB4 /* NotificationAlertType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationAlertType.swift; sourceTree = "<group>"; };
 		DDBF3C7467726DE5D5174B17 /* Pods-BabySleep.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BabySleep.debug.xcconfig"; path = "Target Support Files/Pods-BabySleep/Pods-BabySleep.debug.xcconfig"; sourceTree = "<group>"; };
 		DF6852958183FD878FBB0D77 /* Pods_BabySleep.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BabySleep.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -133,6 +141,8 @@
 		92F6C62F234E7CAF00B17DB4 /* Lib */ = {
 			isa = PBXGroup;
 			children = (
+				92F6C63B234EA36600B17DB4 /* Alert Center */,
+				92F6C636234EA2B000B17DB4 /* RealmAccess.swift */,
 			);
 			path = Lib;
 			sourceTree = "<group>";
@@ -154,6 +164,7 @@
 		92F6C632234E7D0800B17DB4 /* DBAccess */ = {
 			isa = PBXGroup;
 			children = (
+				92F6C638234EA33A00B17DB4 /* Protocols */,
 			);
 			path = DBAccess;
 			sourceTree = "<group>";
@@ -180,6 +191,23 @@
 				92578BE4234E57D70001510D /* Info.plist */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		92F6C638234EA33A00B17DB4 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				92F6C639234EA34800B17DB4 /* Identifiable.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		92F6C63B234EA36600B17DB4 /* Alert Center */ = {
+			isa = PBXGroup;
+			children = (
+				92F6C63C234EA3BC00B17DB4 /* AlertCenter.swift */,
+				92F6C63E234EA3F400B17DB4 /* NotificationAlertType.swift */,
+			);
+			path = "Alert Center";
 			sourceTree = "<group>";
 		};
 		C51B4055A7AEC9FAAB2BC223 /* Pods */ = {
@@ -387,7 +415,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				92578BDB234E57D50001510D /* ViewController.swift in Sources */,
+				92F6C63A234EA34800B17DB4 /* Identifiable.swift in Sources */,
+				92F6C637234EA2B000B17DB4 /* RealmAccess.swift in Sources */,
 				92578BD7234E57D50001510D /* AppDelegate.swift in Sources */,
+				92F6C63D234EA3BC00B17DB4 /* AlertCenter.swift in Sources */,
+				92F6C63F234EA3F400B17DB4 /* NotificationAlertType.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
