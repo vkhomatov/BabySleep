@@ -7,19 +7,24 @@
 //
 
 import UIKit
+import XCoordinator
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
+    let router = SampleCoordinator(coordinatorFactory: CoordinatorFactoryDev(),
+                                   viewControllerFactory: ViewControllerFactoryDev(),
+                                   viewModelFactory: ViewModelFactoryDev()).strongRouter
 
-    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+    func application(_ application: UIApplication,
+                     didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
 
-        let vc = ViewController()
+        let window = UIWindow(frame: UIScreen.main.bounds)
+        self.window = window
 
-        self.window = UIWindow(frame: UIScreen.main.bounds)
-        window?.rootViewController = vc
-        window?.makeKeyAndVisible()
+        router.setRoot(for: window)
+        window.makeKeyAndVisible()
         
         return true
     }
