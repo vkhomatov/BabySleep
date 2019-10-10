@@ -1,0 +1,65 @@
+PODS:
+  - Crashlytics (3.14.0):
+    - Fabric (~> 1.10.2)
+  - Fabric (1.10.2)
+  - FlexLayout (1.3.17)
+  - OHHTTPStubs/Core (8.0.0)
+  - OHHTTPStubs/Default (8.0.0):
+    - OHHTTPStubs/Core
+    - OHHTTPStubs/JSON
+    - OHHTTPStubs/NSURLSession
+    - OHHTTPStubs/OHPathHelpers
+  - OHHTTPStubs/JSON (8.0.0):
+    - OHHTTPStubs/Core
+  - OHHTTPStubs/NSURLSession (8.0.0):
+    - OHHTTPStubs/Core
+  - OHHTTPStubs/OHPathHelpers (8.0.0)
+  - OHHTTPStubs/Swift (8.0.0):
+    - OHHTTPStubs/Default
+  - PinLayout (1.8.12)
+  - Realm (3.19.0):
+    - Realm/Headers (= 3.19.0)
+  - Realm/Headers (3.19.0)
+  - RealmSwift (3.19.0):
+    - Realm (= 3.19.0)
+  - SwiftLint (0.35.0)
+  - XCoordinator (2.0.3):
+    - XCoordinator/Core (= 2.0.3)
+  - XCoordinator/Core (2.0.3)
+
+DEPENDENCIES:
+  - Crashlytics
+  - Fabric
+  - FlexLayout
+  - OHHTTPStubs/Swift
+  - PinLayout
+  - RealmSwift
+  - SwiftLint
+  - XCoordinator (~> 2.0)
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - Crashlytics
+    - Fabric
+    - FlexLayout
+    - OHHTTPStubs
+    - PinLayout
+    - Realm
+    - RealmSwift
+    - SwiftLint
+    - XCoordinator
+
+SPEC CHECKSUMS:
+  Crashlytics: 540b7e5f5da5a042647227a5e3ac51d85eed06df
+  Fabric: 706c8b8098fff96c33c0db69cbf81f9c551d0d74
+  FlexLayout: 257b6763526bc957d2abc2b77a05760b86ca0e21
+  OHHTTPStubs: 9cbce6364bec557cc3439aa6bb7514670d780881
+  PinLayout: 7710deec29658edf16811b27a89a90a0eddd0d9e
+  Realm: 995d585bcf699aaff226715886c849a29dd3d07f
+  RealmSwift: 35f284a537989f2187b413e5917091948cb87a3f
+  SwiftLint: 5553187048b900c91aa03552807681bb6b027846
+  XCoordinator: 5ad39737e6fa8e8f09a8174b16976ccda5ede541
+
+PODFILE CHECKSUM: 1aa2abd8c2dddeb3120c0228ffd076c507f197e3
+
+COCOAPODS: 1.8.3
