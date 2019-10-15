@@ -91,6 +91,12 @@ PODS:
   - XCoordinator (2.0.3):
     - XCoordinator/Core (= 2.0.3)
   - XCoordinator/Core (2.0.3)
+  - YandexMobileMetrica/Dynamic (3.8.2):
+    - YandexMobileMetrica/Dynamic/Core (= 3.8.2)
+    - YandexMobileMetrica/Dynamic/Crashes (= 3.8.2)
+  - YandexMobileMetrica/Dynamic/Core (3.8.2)
+  - YandexMobileMetrica/Dynamic/Crashes (3.8.2):
+    - YandexMobileMetrica/Dynamic/Core
 
 DEPENDENCIES:
   - Crashlytics
@@ -102,6 +108,7 @@ DEPENDENCIES:
   - RealmSwift
   - SwiftLint
   - XCoordinator (~> 2.0)
+  - YandexMobileMetrica/Dynamic (= 3.8.2)
 
 SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
@@ -125,6 +132,7 @@ SPEC REPOS:
     - RealmSwift
     - SwiftLint
     - XCoordinator
+    - YandexMobileMetrica
 
 SPEC CHECKSUMS:
   Crashlytics: 540b7e5f5da5a042647227a5e3ac51d85eed06df
@@ -147,7 +155,8 @@ SPEC CHECKSUMS:
   RealmSwift: 35f284a537989f2187b413e5917091948cb87a3f
   SwiftLint: 5553187048b900c91aa03552807681bb6b027846
   XCoordinator: 5ad39737e6fa8e8f09a8174b16976ccda5ede541
+  YandexMobileMetrica: edb00e8af2903290e142ba4c488adf8d394e828a
 
-PODFILE CHECKSUM: 26bce2868a42fbfe53b162fac3574cf0cefe1ca3
+PODFILE CHECKSUM: 9842e8472b697b9e33f57184e88a7380acd5808e
 
 COCOAPODS: 1.8.3

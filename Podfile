@@ -10,6 +10,7 @@ target "BabySleep" do
     pod 'RealmSwift'
     pod 'OHHTTPStubs/Swift'
     pod 'Firebase/Analytics'
+    pod 'YandexMobileMetrica/Dynamic', '3.8.2'
     pod 'Fabric'
     pod 'Crashlytics'
     pod 'SwiftLint'
