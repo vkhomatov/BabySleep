@@ -8,6 +8,7 @@
 
 import UIKit
 import XCoordinator
+import Firebase
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -27,5 +28,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window.makeKeyAndVisible()
         
         return true
+    }
+    
+    private func metricsConfig() {
+        FirebaseApp.configure()
     }
 }

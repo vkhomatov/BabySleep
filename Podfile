@@ -9,6 +9,7 @@ target "BabySleep" do
     pod 'PinLayout'
     pod 'RealmSwift'
     pod 'OHHTTPStubs/Swift'
+    pod 'Firebase/Analytics'
     pod 'Fabric'
     pod 'Crashlytics'
     pod 'SwiftLint'
