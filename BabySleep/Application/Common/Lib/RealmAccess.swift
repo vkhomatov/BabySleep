@@ -31,7 +31,7 @@ final class RealmAccess<T> where T: Object {
 
         do {
             try realm.write {
-                realm.add(objects, update: true)
+                realm.add(objects, update: .modified)
             }
 
         } catch {
