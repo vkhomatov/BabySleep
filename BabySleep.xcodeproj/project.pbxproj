@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		214F2DB0C9C0C1F26A8E3E7D /* Pods_BabySleepTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A5DE871D5B07CDA17D165BA /* Pods_BabySleepTests.framework */; };
 		611ECF82420A4B4A8D704322 /* Pods_BabySleep.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF6852958183FD878FBB0D77 /* Pods_BabySleep.framework */; };
+		925749C32355DBB200E8D22B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 925749C22355DBB100E8D22B /* GoogleService-Info.plist */; };
 		92578BD7234E57D50001510D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92578BD6234E57D50001510D /* AppDelegate.swift */; };
 		92578BDB234E57D50001510D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92578BDA234E57D50001510D /* ViewController.swift */; };
 		92578BE0234E57D70001510D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 92578BDF234E57D70001510D /* Assets.xcassets */; };
@@ -44,6 +45,7 @@
 		1A5DE871D5B07CDA17D165BA /* Pods_BabySleepTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BabySleepTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F28BE80B5ACDB2CBC2330E4 /* Pods-BabySleep.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BabySleep.release.xcconfig"; path = "Target Support Files/Pods-BabySleep/Pods-BabySleep.release.xcconfig"; sourceTree = "<group>"; };
 		8D1ACA6541F2205D401701CF /* Pods-BabySleepTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BabySleepTests.debug.xcconfig"; path = "Target Support Files/Pods-BabySleepTests/Pods-BabySleepTests.debug.xcconfig"; sourceTree = "<group>"; };
+		925749C22355DBB100E8D22B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		92578BD3234E57D50001510D /* BabySleep.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BabySleep.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		92578BD6234E57D50001510D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		92578BDA234E57D50001510D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -221,6 +223,7 @@
 			isa = PBXGroup;
 			children = (
 				92578BDF234E57D70001510D /* Assets.xcassets */,
+				925749C22355DBB100E8D22B /* GoogleService-Info.plist */,
 				92578BE4234E57D70001510D /* Info.plist */,
 			);
 			path = Resources;
@@ -305,6 +308,7 @@
 				92578BD1234E57D50001510D /* Resources */,
 				4DB3FE42C9D9FD7516CDF95A /* [CP] Embed Pods Frameworks */,
 				92F6C640234EA53700B17DB4 /* ShellScript */,
+				92AB0C132355DFF5004B3FF5 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -379,6 +383,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				92578BE0234E57D70001510D /* Assets.xcassets in Resources */,
+				925749C32355DBB200E8D22B /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -408,6 +413,23 @@
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BabySleep/Pods-BabySleep-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
+		};
+		92AB0C132355DFF5004B3FF5 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n\"${PODS_ROOT}/Fabric/run\"\n";
 		};
 		92F6C640234EA53700B17DB4 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
