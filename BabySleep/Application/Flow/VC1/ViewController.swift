@@ -53,6 +53,13 @@ class ViewController: UIViewController {
     }
 
     @objc private func buttonPressed() {
-        router.trigger(.anotherViewController)
+        //router.trigger(.anotherViewController)
+        let a:Int? = nil
+        if let b = a {
+            print(b)
+        } else {
+            ExceptionHandlingHelper.reportError(message: "test error reports", excerption: nil)
+        }
+        
     }
 }
