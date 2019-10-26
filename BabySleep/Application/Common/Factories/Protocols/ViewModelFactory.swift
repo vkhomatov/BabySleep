@@ -9,4 +9,5 @@
 protocol ViewModelFactory {
     func makeViewModel() -> ViewModel
     func makeAnotherViewModel() -> AnotherViewModel
+    func makePageModel() -> PageModel
 }

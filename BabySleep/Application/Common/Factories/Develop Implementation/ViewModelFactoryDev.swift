@@ -15,4 +15,8 @@ final class ViewModelFactoryDev: ViewModelFactory {
     func makeAnotherViewModel() -> AnotherViewModel {
         return AnotherViewModel()
     }
+    
+    func makePageModel() -> PageModel {
+    return PageModel()
+    }
 }

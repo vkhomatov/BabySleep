@@ -24,4 +24,9 @@ final class ViewControllerFactoryDev: ViewControllerFactory {
         return AnotherViewController(model: model,
                                      router: router)
     }
+    
+    func makePageController(router: UnownedRouter<SampleRoute>,
+                            model: PageModel) -> PageController {
+        return PageController(model: model, router: router)
+    }
 }
