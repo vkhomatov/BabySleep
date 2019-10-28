@@ -28,6 +28,7 @@
 		92F6C64F234EAA7800B17DB4 /* CoordinatorFactoryDev.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92F6C64E234EAA7800B17DB4 /* CoordinatorFactoryDev.swift */; };
 		92F6C651234EAA8F00B17DB4 /* ViewControllerFactoryDev.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92F6C650234EAA8F00B17DB4 /* ViewControllerFactoryDev.swift */; };
 		92F6C653234EAAA100B17DB4 /* ViewModelFactoryDev.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92F6C652234EAAA100B17DB4 /* ViewModelFactoryDev.swift */; };
+		CE2E5E9A236779BF0085C6B4 /* Sleep.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2E5E99236779BF0085C6B4 /* Sleep.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +69,7 @@
 		92F6C64E234EAA7800B17DB4 /* CoordinatorFactoryDev.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorFactoryDev.swift; sourceTree = "<group>"; };
 		92F6C650234EAA8F00B17DB4 /* ViewControllerFactoryDev.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerFactoryDev.swift; sourceTree = "<group>"; };
 		92F6C652234EAAA100B17DB4 /* ViewModelFactoryDev.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelFactoryDev.swift; sourceTree = "<group>"; };
+		CE2E5E99236779BF0085C6B4 /* Sleep.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sleep.swift; sourceTree = "<group>"; };
 		DDBF3C7467726DE5D5174B17 /* Pods-BabySleep.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BabySleep.debug.xcconfig"; path = "Target Support Files/Pods-BabySleep/Pods-BabySleep.debug.xcconfig"; sourceTree = "<group>"; };
 		DF6852958183FD878FBB0D77 /* Pods_BabySleep.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BabySleep.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -206,6 +208,7 @@
 		92F6C633234E7D5900B17DB4 /* Entities */ = {
 			isa = PBXGroup;
 			children = (
+				CE2E5E99236779BF0085C6B4 /* Sleep.swift */,
 			);
 			path = Entities;
 			sourceTree = "<group>";
@@ -519,6 +522,7 @@
 				92578BDB234E57D50001510D /* ViewController.swift in Sources */,
 				92F6C653234EAAA100B17DB4 /* ViewModelFactoryDev.swift in Sources */,
 				92F6C64F234EAA7800B17DB4 /* CoordinatorFactoryDev.swift in Sources */,
+				CE2E5E9A236779BF0085C6B4 /* Sleep.swift in Sources */,
 				92F6C651234EAA8F00B17DB4 /* ViewControllerFactoryDev.swift in Sources */,
 				92F6C64D234EA91B00B17DB4 /* ViewModel.swift in Sources */,
 				92F6C642234EA63E00B17DB4 /* SampleCoordinator.swift in Sources */,
