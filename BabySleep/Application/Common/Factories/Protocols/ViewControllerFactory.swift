@@ -17,5 +17,5 @@ protocol ViewControllerFactory {
                                    model: AnotherViewModel) -> AnotherViewController
     
     func makePageController(router: UnownedRouter<SampleRoute>,
-                            model: PageModel) -> PageController
+                            model: PageModel) -> WalkthroughPageController
 }
