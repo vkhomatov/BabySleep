@@ -25,8 +25,8 @@ final class ViewControllerFactoryDev: ViewControllerFactory {
                                      router: router)
     }
     
-    func makePageController(router: UnownedRouter<SampleRoute>,
-                            model: PageModel) -> WalkthroughPageController {
-        return WalkthroughPageController(model: model, router: router)
+    func makeWalkthroughViewController(router: UnownedRouter<SampleRoute>, model: PageModel) -> WalkthroughViewController {
+        return WalkthroughViewController(model: model,
+                                             router: router)
     }
 }

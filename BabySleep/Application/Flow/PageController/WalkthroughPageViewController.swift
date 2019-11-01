@@ -7,71 +7,102 @@
 //
 
 import UIKit
-import XCoordinator
-import PinLayout
 
-class WalkthroughPageViewController: UIViewController {
-    
-    private let model: PageModel
-    private let router: UnownedRouter<SampleRoute>
 
-    init(model: PageModel, router: UnownedRouter<SampleRoute>) {
-        self.model = model
-        self.router = router
-        super.init(nibName: nil, bundle: nil)
-    }
+class WalkthroughPageViewController: UIPageViewController,
+                                     UIPageViewControllerDelegate,
+                                     UIPageViewControllerDataSource {
     
-    convenience required init?(coder aDecoder: NSCoder) {
-        fatalError()
-    }
+    var pageControl = UIPageControl()
+    
+    lazy var orderedViewControllers: [UIViewController] = {
+        return [self.newVC(viewController: "Blue"),
+                self.newVC(viewController: "Red")]
+    }()
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.dataSource = self
+        self.delegate = self
         
-        view.backgroundColor = .orange
-        setupView()
+        if let firstViewController = orderedViewControllers.first {
+            setViewControllers([firstViewController],
+                               direction: .forward,
+                               animated: true,
+                               completion: nil)
+        }
+        configurePageControl()
     }
     
-    private func setupView() {
-        let button = UIButton()
+    func configurePageControl() {
+        pageControl = UIPageControl(
+            frame: CGRect(
+                x: 0, y: UIScreen.main.bounds.maxY - 50,
+                width: UIScreen.main.bounds.width,
+                height: 50
+            )
+        )
+        self.pageControl.numberOfPages = orderedViewControllers.count
+        self.pageControl.currentPage = 0
+        self.pageControl.tintColor = UIColor.black
+        self.pageControl.pageIndicatorTintColor = UIColor.white
+        self.pageControl.currentPageIndicatorTintColor = UIColor.black
+        self.view.addSubview(pageControl)
+    }
         
-        view.addSubview(button)
+        func newVC(viewController: String) -> UIViewController {
+            return UIViewController(
+                nibName: "WalkthroughViewController", bundle: nil
+            )
+        }
         
-        button.pin.centerLeft(50)
-        .width(20%)
-        .height(10%)
+        func pageViewController(_ pageViewController: UIPageViewController,
+                                didFinishAnimating finished: Bool,
+                                previousViewControllers: [UIViewController],
+                                transitionCompleted completed: Bool) {
+            let pageContentViewController = pageViewController.viewControllers![0]
+            self.pageControl.currentPage = orderedViewControllers.firstIndex(
+                of: pageContentViewController)!
+        }
         
-        button.layer.cornerRadius = button.frame.size.height / 5
-        button.layer.masksToBounds = true
-        button.backgroundColor = .green
-        button.setTitle("Green", for: .normal)
-        button.setTitleColor(.black, for: .normal)
-        
-        button.addTarget(self, action: #selector(self.buttonPressed), for: .touchUpInside)
-        
-        let redButton = UIButton()
-        
-        view.addSubview(redButton)
+        func pageViewController(_ pageViewController: UIPageViewController,
+                                viewControllerBefore
+            viewController: UIViewController) -> UIViewController? {
+            guard let viewControllerIndex = orderedViewControllers.firstIndex(
+                of: viewController) else {
+                    return nil
+            }
+            let previousIndex = viewControllerIndex - 1
             
-        redButton.pin.centerRight(50)
-        .width(20%)
-        .height(10%)
+            guard previousIndex >= 0 else {
+                return orderedViewControllers.last
+            }
+            
+            guard orderedViewControllers.count > previousIndex else {
+                return nil
+            }
+            return orderedViewControllers[previousIndex]
+        }
         
-        redButton.layer.cornerRadius = button.frame.size.height / 5
-        redButton.layer.masksToBounds = true
-        redButton.backgroundColor = .red
-        redButton.setTitle("Red", for: .normal)
-        redButton.setTitleColor(.black, for: .normal)
-        
-        redButton.addTarget(self, action: #selector(self.redButtonPressed), for: .touchUpInside)
-    }
-    
-    @objc private func buttonPressed() {
-        router.trigger(.anotherViewController)
-    }
-    
-    @objc private func redButtonPressed() {
-        router.trigger(.viewController)
-    }
-    
+        func pageViewController(_ pageViewController: UIPageViewController,
+                                viewControllerAfter
+            viewController: UIViewController) -> UIViewController? {
+            guard let viewControllerIndex = orderedViewControllers.firstIndex(
+                of: viewController) else {
+                    return nil
+            }
+            
+            let nextIndex = viewControllerIndex + 1
+            let orderedViewControllersCount = orderedViewControllers.count
+            
+            guard orderedViewControllersCount != nextIndex else {
+                return orderedViewControllers.first
+            }
+            
+            guard orderedViewControllersCount > nextIndex else {
+                return nil
+            }
+            
+            return orderedViewControllers[nextIndex]
+        }
 }

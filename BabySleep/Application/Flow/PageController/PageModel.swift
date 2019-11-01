@@ -6,6 +6,6 @@
 //  Copyright © 2019 Денис Львович. All rights reserved.
 //
 
-final class PageModel {
+ final class PageModel {
     
 }

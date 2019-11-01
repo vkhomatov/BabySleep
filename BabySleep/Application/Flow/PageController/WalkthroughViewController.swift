@@ -7,24 +7,70 @@
 //
 
 import UIKit
+import XCoordinator
+import PinLayout
 
 class WalkthroughViewController: UIViewController {
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+    
+    private let model: PageModel
+    private let router: UnownedRouter<SampleRoute>
+    
+    init(model: PageModel, router: UnownedRouter<SampleRoute>) {
+        self.model = model
+        self.router = router
+        super.init(nibName: nil, bundle: nil)
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    convenience required init?(coder aDecoder: NSCoder) {
+        fatalError()
     }
-    */
-
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        view.backgroundColor = .orange
+        setupView()
+    }
+    
+    private func setupView() {
+        let button = UIButton()
+        
+        view.addSubview(button)
+        
+        button.pin.centerLeft(50)
+            .width(20%)
+            .height(10%)
+        
+        button.layer.cornerRadius = button.frame.size.height / 5
+        button.layer.masksToBounds = true
+        button.backgroundColor = .green
+        button.setTitle("Green", for: .normal)
+        button.setTitleColor(.black, for: .normal)
+        
+        button.addTarget(self, action: #selector(self.buttonPressed), for: .touchUpInside)
+        
+        let redButton = UIButton()
+        
+        view.addSubview(redButton)
+        
+        redButton.pin.centerRight(50)
+            .width(20%)
+            .height(10%)
+        
+        redButton.layer.cornerRadius = button.frame.size.height / 5
+        redButton.layer.masksToBounds = true
+        redButton.backgroundColor = .red
+        redButton.setTitle("Red", for: .normal)
+        redButton.setTitleColor(.black, for: .normal)
+        
+        redButton.addTarget(self, action: #selector(self.redButtonPressed), for: .touchUpInside)
+    }
+    
+    @objc private func buttonPressed() {
+        router.trigger(.anotherViewController)
+    }
+    
+    @objc private func redButtonPressed() {
+        router.trigger(.viewController)
+    }
 }

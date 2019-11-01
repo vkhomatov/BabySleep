@@ -12,7 +12,7 @@ import XCoordinator
 enum SampleRoute: Route {
     case viewController
     case anotherViewController
-    case pageController
+    case walkthroughViewController
 }
 
 final class SampleCoordinator: NavigationCoordinator<SampleRoute> {
@@ -52,10 +52,10 @@ final class SampleCoordinator: NavigationCoordinator<SampleRoute> {
 
             return .push(viewController)
             
-        case .pageController:
+        case .walkthroughViewController:
             let model = viewModelFactory.makePageModel()
             let viewController = self.viewControllerFactory
-                .makePageController(router: self.unownedRouter, model: model)
+                .makeWalkthroughViewController(router: self.unownedRouter, model: model)
             return .push(viewController)
         }
     }
