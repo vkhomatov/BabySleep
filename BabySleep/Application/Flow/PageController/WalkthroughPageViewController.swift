@@ -10,7 +10,7 @@ import UIKit
 import XCoordinator
 import PinLayout
 
-class WalkthroughPageController: UIViewController {
+class WalkthroughPageViewController: UIViewController {
     
     private let model: PageModel
     private let router: UnownedRouter<SampleRoute>
