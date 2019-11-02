@@ -29,6 +29,7 @@
 		92F6C651234EAA8F00B17DB4 /* ViewControllerFactoryDev.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92F6C650234EAA8F00B17DB4 /* ViewControllerFactoryDev.swift */; };
 		92F6C653234EAAA100B17DB4 /* ViewModelFactoryDev.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92F6C652234EAAA100B17DB4 /* ViewModelFactoryDev.swift */; };
 		CE2E5E9A236779BF0085C6B4 /* Sleep.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2E5E99236779BF0085C6B4 /* Sleep.swift */; };
+		CE2E5E9C236785B50085C6B4 /* SleepAccess.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2E5E9B236785B50085C6B4 /* SleepAccess.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,6 +71,7 @@
 		92F6C650234EAA8F00B17DB4 /* ViewControllerFactoryDev.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerFactoryDev.swift; sourceTree = "<group>"; };
 		92F6C652234EAAA100B17DB4 /* ViewModelFactoryDev.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelFactoryDev.swift; sourceTree = "<group>"; };
 		CE2E5E99236779BF0085C6B4 /* Sleep.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sleep.swift; sourceTree = "<group>"; };
+		CE2E5E9B236785B50085C6B4 /* SleepAccess.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SleepAccess.swift; sourceTree = "<group>"; };
 		DDBF3C7467726DE5D5174B17 /* Pods-BabySleep.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BabySleep.debug.xcconfig"; path = "Target Support Files/Pods-BabySleep/Pods-BabySleep.debug.xcconfig"; sourceTree = "<group>"; };
 		DF6852958183FD878FBB0D77 /* Pods_BabySleep.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BabySleep.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -201,6 +203,7 @@
 			isa = PBXGroup;
 			children = (
 				92F6C638234EA33A00B17DB4 /* Protocols */,
+				CE2E5E9B236785B50085C6B4 /* SleepAccess.swift */,
 			);
 			path = DBAccess;
 			sourceTree = "<group>";
@@ -530,6 +533,7 @@
 				92F6C64B234EA8DA00B17DB4 /* ViewModelFactory.swift in Sources */,
 				92F6C649234EA88700B17DB4 /* ViewControllerFactory.swift in Sources */,
 				92F6C637234EA2B000B17DB4 /* RealmAccess.swift in Sources */,
+				CE2E5E9C236785B50085C6B4 /* SleepAccess.swift in Sources */,
 				92578BD7234E57D50001510D /* AppDelegate.swift in Sources */,
 				92A6884B234EB0470030A84D /* AnotherViewController.swift in Sources */,
 				92F6C63D234EA3BC00B17DB4 /* AlertCenter.swift in Sources */,

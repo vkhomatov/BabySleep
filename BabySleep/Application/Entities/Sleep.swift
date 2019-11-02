@@ -9,6 +9,10 @@
 import Foundation
 import RealmSwift
 
+protocol SleepProtocol: class {
+    func returnSleepClass () -> Sleep?
+}
+
 class Sleep: Object {
     
     @objc dynamic var uuid: String = ""
