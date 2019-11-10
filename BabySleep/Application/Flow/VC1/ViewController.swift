@@ -53,6 +53,6 @@ class ViewController: UIViewController {
     }
 
     @objc private func buttonPressed() {
-        router.trigger(.anotherViewController) 
+        router.trigger(.anotherViewController)
     }
 }
