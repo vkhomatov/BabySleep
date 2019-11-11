@@ -11,23 +11,16 @@
 		611ECF82420A4B4A8D704322 /* Pods_BabySleep.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF6852958183FD878FBB0D77 /* Pods_BabySleep.framework */; };
 		925749C32355DBB200E8D22B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 925749C22355DBB100E8D22B /* GoogleService-Info.plist */; };
 		92578BD7234E57D50001510D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92578BD6234E57D50001510D /* AppDelegate.swift */; };
-		92578BDB234E57D50001510D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92578BDA234E57D50001510D /* ViewController.swift */; };
 		92578BE0234E57D70001510D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 92578BDF234E57D70001510D /* Assets.xcassets */; };
 		92578BEE234E57D70001510D /* BabySleepTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92578BED234E57D70001510D /* BabySleepTests.swift */; };
-		92A6884B234EB0470030A84D /* AnotherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92A6884A234EB0470030A84D /* AnotherViewController.swift */; };
-		92A6884D234EB0580030A84D /* AnotherViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92A6884C234EB0580030A84D /* AnotherViewModel.swift */; };
 		92F6C637234EA2B000B17DB4 /* RealmAccess.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92F6C636234EA2B000B17DB4 /* RealmAccess.swift */; };
 		92F6C63A234EA34800B17DB4 /* Identifiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92F6C639234EA34800B17DB4 /* Identifiable.swift */; };
 		92F6C63D234EA3BC00B17DB4 /* AlertCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92F6C63C234EA3BC00B17DB4 /* AlertCenter.swift */; };
 		92F6C63F234EA3F400B17DB4 /* NotificationAlertType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92F6C63E234EA3F400B17DB4 /* NotificationAlertType.swift */; };
-		92F6C642234EA63E00B17DB4 /* SampleCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92F6C641234EA63E00B17DB4 /* SampleCoordinator.swift */; };
-		92F6C647234EA83F00B17DB4 /* CoordinatorFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92F6C646234EA83F00B17DB4 /* CoordinatorFactory.swift */; };
-		92F6C649234EA88700B17DB4 /* ViewControllerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92F6C648234EA88700B17DB4 /* ViewControllerFactory.swift */; };
-		92F6C64B234EA8DA00B17DB4 /* ViewModelFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92F6C64A234EA8DA00B17DB4 /* ViewModelFactory.swift */; };
-		92F6C64D234EA91B00B17DB4 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92F6C64C234EA91B00B17DB4 /* ViewModel.swift */; };
-		92F6C64F234EAA7800B17DB4 /* CoordinatorFactoryDev.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92F6C64E234EAA7800B17DB4 /* CoordinatorFactoryDev.swift */; };
-		92F6C651234EAA8F00B17DB4 /* ViewControllerFactoryDev.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92F6C650234EAA8F00B17DB4 /* ViewControllerFactoryDev.swift */; };
-		92F6C653234EAAA100B17DB4 /* ViewModelFactoryDev.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92F6C652234EAAA100B17DB4 /* ViewModelFactoryDev.swift */; };
+		B59006EB2379BE3F00C6D0BF /* ViewModelFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = B59006EA2379BE3F00C6D0BF /* ViewModelFactory.swift */; };
+		B59006ED2379BE4F00C6D0BF /* ViewModelFactoryDev.swift in Sources */ = {isa = PBXBuildFile; fileRef = B59006EC2379BE4F00C6D0BF /* ViewModelFactoryDev.swift */; };
+		B59006EF2379BE5C00C6D0BF /* ViewControllerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = B59006EE2379BE5C00C6D0BF /* ViewControllerFactory.swift */; };
+		B59006F12379BE6400C6D0BF /* ViewControllerFactoryDev.swift in Sources */ = {isa = PBXBuildFile; fileRef = B59006F02379BE6400C6D0BF /* ViewControllerFactoryDev.swift */; };
 		B5ED82732373A00F00B1C442 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5ED82682373A00F00B1C442 /* DetailViewController.swift */; };
 		B5ED82742373A00F00B1C442 /* DetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5ED82692373A00F00B1C442 /* DetailViewModel.swift */; };
 		B5ED82752373A00F00B1C442 /* RegimeListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5ED826B2373A00F00B1C442 /* RegimeListViewController.swift */; };
@@ -83,26 +76,19 @@
 		925749C22355DBB100E8D22B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		92578BD3234E57D50001510D /* BabySleep.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BabySleep.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		92578BD6234E57D50001510D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		92578BDA234E57D50001510D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		92578BDF234E57D70001510D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		92578BE4234E57D70001510D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		92578BE9234E57D70001510D /* BabySleepTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BabySleepTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		92578BED234E57D70001510D /* BabySleepTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BabySleepTests.swift; sourceTree = "<group>"; };
 		92578BEF234E57D70001510D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		92A6884A234EB0470030A84D /* AnotherViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnotherViewController.swift; sourceTree = "<group>"; };
-		92A6884C234EB0580030A84D /* AnotherViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnotherViewModel.swift; sourceTree = "<group>"; };
 		92F6C636234EA2B000B17DB4 /* RealmAccess.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmAccess.swift; sourceTree = "<group>"; };
 		92F6C639234EA34800B17DB4 /* Identifiable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Identifiable.swift; sourceTree = "<group>"; };
 		92F6C63C234EA3BC00B17DB4 /* AlertCenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertCenter.swift; sourceTree = "<group>"; };
 		92F6C63E234EA3F400B17DB4 /* NotificationAlertType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationAlertType.swift; sourceTree = "<group>"; };
-		92F6C641234EA63E00B17DB4 /* SampleCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleCoordinator.swift; sourceTree = "<group>"; };
-		92F6C646234EA83F00B17DB4 /* CoordinatorFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorFactory.swift; sourceTree = "<group>"; };
-		92F6C648234EA88700B17DB4 /* ViewControllerFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerFactory.swift; sourceTree = "<group>"; };
-		92F6C64A234EA8DA00B17DB4 /* ViewModelFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelFactory.swift; sourceTree = "<group>"; };
-		92F6C64C234EA91B00B17DB4 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
-		92F6C64E234EAA7800B17DB4 /* CoordinatorFactoryDev.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorFactoryDev.swift; sourceTree = "<group>"; };
-		92F6C650234EAA8F00B17DB4 /* ViewControllerFactoryDev.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerFactoryDev.swift; sourceTree = "<group>"; };
-		92F6C652234EAAA100B17DB4 /* ViewModelFactoryDev.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelFactoryDev.swift; sourceTree = "<group>"; };
+		B59006EA2379BE3F00C6D0BF /* ViewModelFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelFactory.swift; sourceTree = "<group>"; };
+		B59006EC2379BE4F00C6D0BF /* ViewModelFactoryDev.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelFactoryDev.swift; sourceTree = "<group>"; };
+		B59006EE2379BE5C00C6D0BF /* ViewControllerFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerFactory.swift; sourceTree = "<group>"; };
+		B59006F02379BE6400C6D0BF /* ViewControllerFactoryDev.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerFactoryDev.swift; sourceTree = "<group>"; };
 		B5ED82682373A00F00B1C442 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		B5ED82692373A00F00B1C442 /* DetailViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewModel.swift; sourceTree = "<group>"; };
 		B5ED826B2373A00F00B1C442 /* RegimeListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegimeListViewController.swift; sourceTree = "<group>"; };
@@ -200,15 +186,6 @@
 			path = BabySleepTests;
 			sourceTree = "<group>";
 		};
-		92A68849234EB0240030A84D /* Another VC1 */ = {
-			isa = PBXGroup;
-			children = (
-				92A6884A234EB0470030A84D /* AnotherViewController.swift */,
-				92A6884C234EB0580030A84D /* AnotherViewModel.swift */,
-			);
-			path = "Another VC1";
-			sourceTree = "<group>";
-		};
 		92F6C62C234E7C5600B17DB4 /* Application */ = {
 			isa = PBXGroup;
 			children = (
@@ -252,13 +229,13 @@
 		92F6C630234E7CE200B17DB4 /* Factories */ = {
 			isa = PBXGroup;
 			children = (
+				B59006E92379BDF900C6D0BF /* ViewModel */,
+				B59006E82379BDEF00C6D0BF /* ViewController */,
 				B5ED82862373A04500B1C442 /* Coordinator */,
 				B5ED82902373A04500B1C442 /* Detail */,
 				B5ED82972373A04600B1C442 /* Regime */,
 				B5ED82892373A04500B1C442 /* Reports */,
 				B5ED827B2373A03500B1C442 /* Training */,
-				92F6C644234EA7E500B17DB4 /* Protocols */,
-				92F6C645234EA7FC00B17DB4 /* Develop Implementation */,
 			);
 			path = Factories;
 			sourceTree = "<group>";
@@ -271,7 +248,6 @@
 				B5ED82B32373A07000B1C442 /* ReportCoordinator.swift */,
 				B5ED82B62373A07000B1C442 /* TabBarCoordinator.swift */,
 				B5ED82B22373A07000B1C442 /* TrainingCoordinator.swift */,
-				92F6C641234EA63E00B17DB4 /* SampleCoordinator.swift */,
 			);
 			path = Coordinators;
 			sourceTree = "<group>";
@@ -298,8 +274,6 @@
 				B5ED826A2373A00F00B1C442 /* RegimeVC */,
 				B5ED826D2373A00F00B1C442 /* ReportVC */,
 				B5ED82702373A00F00B1C442 /* TrainingVC */,
-				92F6C643234EA6CF00B17DB4 /* VC1 */,
-				92A68849234EB0240030A84D /* Another VC1 */,
 			);
 			path = Flow;
 			sourceTree = "<group>";
@@ -331,33 +305,22 @@
 			path = "Alert Center";
 			sourceTree = "<group>";
 		};
-		92F6C643234EA6CF00B17DB4 /* VC1 */ = {
+		B59006E82379BDEF00C6D0BF /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
-				92578BDA234E57D50001510D /* ViewController.swift */,
-				92F6C64C234EA91B00B17DB4 /* ViewModel.swift */,
+				B59006EE2379BE5C00C6D0BF /* ViewControllerFactory.swift */,
+				B59006F02379BE6400C6D0BF /* ViewControllerFactoryDev.swift */,
 			);
-			path = VC1;
+			path = ViewController;
 			sourceTree = "<group>";
 		};
-		92F6C644234EA7E500B17DB4 /* Protocols */ = {
+		B59006E92379BDF900C6D0BF /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
-				92F6C646234EA83F00B17DB4 /* CoordinatorFactory.swift */,
-				92F6C648234EA88700B17DB4 /* ViewControllerFactory.swift */,
-				92F6C64A234EA8DA00B17DB4 /* ViewModelFactory.swift */,
+				B59006EA2379BE3F00C6D0BF /* ViewModelFactory.swift */,
+				B59006EC2379BE4F00C6D0BF /* ViewModelFactoryDev.swift */,
 			);
-			path = Protocols;
-			sourceTree = "<group>";
-		};
-		92F6C645234EA7FC00B17DB4 /* Develop Implementation */ = {
-			isa = PBXGroup;
-			children = (
-				92F6C64E234EAA7800B17DB4 /* CoordinatorFactoryDev.swift */,
-				92F6C650234EAA8F00B17DB4 /* ViewControllerFactoryDev.swift */,
-				92F6C652234EAAA100B17DB4 /* ViewModelFactoryDev.swift */,
-			);
-			path = "Develop Implementation";
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		B5ED82672373A00F00B1C442 /* DetailVC */ = {
@@ -758,29 +721,23 @@
 			buildActionMask = 2147483647;
 			files = (
 				B5ED82A12373A04600B1C442 /* BSCoordinatorFactoryDev.swift in Sources */,
+				B59006ED2379BE4F00C6D0BF /* ViewModelFactoryDev.swift in Sources */,
 				B5ED82A42373A04600B1C442 /* ReportViewControllerFactoryDev.swift in Sources */,
-				92578BDB234E57D50001510D /* ViewController.swift in Sources */,
 				B5ED82AE2373A04600B1C442 /* RegimeViewController.swift in Sources */,
-				92F6C653234EAAA100B17DB4 /* ViewModelFactoryDev.swift in Sources */,
+				B59006EF2379BE5C00C6D0BF /* ViewControllerFactory.swift in Sources */,
 				B5ED82BB2373A07000B1C442 /* TabBarCoordinator.swift in Sources */,
 				B9619A6D2364408300566520 /* ExceptionHandlingHelper.swift in Sources */,
 				B5ED82852373A03500B1C442 /* TrainingViewModelFactoryDev.swift in Sources */,
 				B5ED82BA2373A07000B1C442 /* RegimeCoordinator.swift in Sources */,
-				92F6C64F234EAA7800B17DB4 /* CoordinatorFactoryDev.swift in Sources */,
-				92F6C651234EAA8F00B17DB4 /* ViewControllerFactoryDev.swift in Sources */,
 				B5ED82AC2373A04600B1C442 /* RegimeViewControllerFactoryDev.swift in Sources */,
 				B5ED82A72373A04600B1C442 /* DetailViewModelFactoryDev.swift in Sources */,
-				92F6C64D234EA91B00B17DB4 /* ViewModel.swift in Sources */,
-				92F6C642234EA63E00B17DB4 /* SampleCoordinator.swift in Sources */,
 				B5ED82742373A00F00B1C442 /* DetailViewModel.swift in Sources */,
 				92F6C63A234EA34800B17DB4 /* Identifiable.swift in Sources */,
-				92F6C64B234EA8DA00B17DB4 /* ViewModelFactory.swift in Sources */,
 				B5ED82A92373A04600B1C442 /* DetailViewModelFactory.swift in Sources */,
 				B5ED82A22373A04600B1C442 /* BSCoordinatorFactory.swift in Sources */,
 				B5ED82B82373A07000B1C442 /* ReportCoordinator.swift in Sources */,
 				B5ED82732373A00F00B1C442 /* DetailViewController.swift in Sources */,
 				B5ED82AB2373A04600B1C442 /* RegimeCorrdinatorFactoryDev.swift in Sources */,
-				92F6C649234EA88700B17DB4 /* ViewControllerFactory.swift in Sources */,
 				B5ED82B72373A07000B1C442 /* TrainingCoordinator.swift in Sources */,
 				B5ED827A2373A00F00B1C442 /* TrainingViewModel.swift in Sources */,
 				B5ED82AA2373A04600B1C442 /* DetailViewControllerFactory.swift in Sources */,
@@ -797,17 +754,16 @@
 				B5ED82B92373A07000B1C442 /* DetailCoordinator.swift in Sources */,
 				92578BD7234E57D50001510D /* AppDelegate.swift in Sources */,
 				B5ED82842373A03500B1C442 /* TrainingViewControllerFactoryDev.swift in Sources */,
-				92A6884B234EB0470030A84D /* AnotherViewController.swift in Sources */,
 				92F6C63D234EA3BC00B17DB4 /* AlertCenter.swift in Sources */,
+				B59006EB2379BE3F00C6D0BF /* ViewModelFactory.swift in Sources */,
 				B5ED82A32373A04600B1C442 /* ReportViewModelFactoryDev.swift in Sources */,
 				B5ED82792373A00F00B1C442 /* TrainingViewController.swift in Sources */,
 				B5ED82A82373A04600B1C442 /* DetailViewControllerFactoryDev.swift in Sources */,
+				B59006F12379BE6400C6D0BF /* ViewControllerFactoryDev.swift in Sources */,
 				B5ED82762373A00F00B1C442 /* RegimeListViewModel.swift in Sources */,
 				B5ED82772373A00F00B1C442 /* ReportViewModel.swift in Sources */,
 				92F6C63F234EA3F400B17DB4 /* NotificationAlertType.swift in Sources */,
-				92A6884D234EB0580030A84D /* AnotherViewModel.swift in Sources */,
 				B5ED82B02373A04600B1C442 /* RegimeViewModelFactory.swift in Sources */,
-				92F6C647234EA83F00B17DB4 /* CoordinatorFactory.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

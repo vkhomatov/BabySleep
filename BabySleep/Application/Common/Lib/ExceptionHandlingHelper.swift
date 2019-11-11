@@ -17,7 +17,7 @@ final class ExceptionHandlingHelper {
         CLSLogv("%@", getVaList([message]))
     }
     static func logEvent(event: String, title: String, content: String) {
-        assertionFailure(content);
+        assertionFailure(content)
         let parameters = [AnalyticsParameterItemID: "id-\(title)", AnalyticsParameterItemName: title, AnalyticsParameterContent: content]
         
         Analytics.logEvent(event, parameters: parameters)

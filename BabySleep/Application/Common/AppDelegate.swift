@@ -15,9 +15,7 @@ import YandexMobileMetrica
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-    let router = SampleCoordinator(coordinatorFactory: CoordinatorFactoryDev(),
-                                   viewControllerFactory: ViewControllerFactoryDev(),
-                                   viewModelFactory: ViewModelFactoryDev()).strongRouter
+
     
     let tabBarRouter = BSTabBarCoordinator()
 

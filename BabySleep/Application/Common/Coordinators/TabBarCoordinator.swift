@@ -45,7 +45,6 @@ final class BSTabBarCoordinator: TabBarCoordinator<BSTabBarRoute> {
         let detailCoordinator = coordinatorFactory.makeDetailCoordinator(controllerFactory: detailVCFactory, modelFactory: detailVMFactory)
         
         
-        
         regimeCoordinator.rootViewController.tabBarItem = UITabBarItem(title: "Режим",
                                                                        image: nil,
                                                                        selectedImage: nil)
