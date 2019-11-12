@@ -11,11 +11,13 @@ import Crashlytics
 import FirebaseAnalytics
 
 final class ExceptionHandlingHelper {
+    
     static func reportError(message: String, excerption: NSException? = nil) {
         assertionFailure(message)
         YMMYandexMetrica.reportError(message, exception: excerption, onFailure: nil)
         CLSLogv("%@", getVaList([message]))
     }
+
     static func logEvent(event: String, title: String, content: String) {
 
         assertionFailure(content)

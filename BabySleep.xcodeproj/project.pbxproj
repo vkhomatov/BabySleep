@@ -9,15 +9,17 @@
 /* Begin PBXBuildFile section */
 		214F2DB0C9C0C1F26A8E3E7D /* Pods_BabySleepTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A5DE871D5B07CDA17D165BA /* Pods_BabySleepTests.framework */; };
 		611ECF82420A4B4A8D704322 /* Pods_BabySleep.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF6852958183FD878FBB0D77 /* Pods_BabySleep.framework */; };
-		92095F9E2378BB0400A20BBE /* Sleep.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92095F9D2378BB0400A20BBE /* Sleep.swift */; };
-		92095FA02378C2C700A20BBE /* SleepDataAccessDev.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92095F9F2378C2C700A20BBE /* SleepDataAccessDev.swift */; };
-		92095FA22378C4FE00A20BBE /* Identifiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92095FA12378C4FD00A20BBE /* Identifiable.swift */; };
-		92095FA42378CA9700A20BBE /* Aliases.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92095FA32378CA9700A20BBE /* Aliases.swift */; };
-		92095FA72378CADF00A20BBE /* SleepDataAccess.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92095FA62378CADF00A20BBE /* SleepDataAccess.swift */; };
 		925749C32355DBB200E8D22B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 925749C22355DBB100E8D22B /* GoogleService-Info.plist */; };
 		92578BD7234E57D50001510D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92578BD6234E57D50001510D /* AppDelegate.swift */; };
 		92578BE0234E57D70001510D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 92578BDF234E57D70001510D /* Assets.xcassets */; };
 		92578BEE234E57D70001510D /* BabySleepTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92578BED234E57D70001510D /* BabySleepTests.swift */; };
+		92E98B85237B56D5003DCC92 /* SleepRealm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92E98B84237B56D5003DCC92 /* SleepRealm.swift */; };
+		92E98B86237B56FC003DCC92 /* Sleep.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92095F9D2378BB0400A20BBE /* Sleep.swift */; };
+		92E98B87237B576C003DCC92 /* Aliases.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92095FA32378CA9700A20BBE /* Aliases.swift */; };
+		92E98B88237B577C003DCC92 /* Identifiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92095FA12378C4FD00A20BBE /* Identifiable.swift */; };
+		92E98B8A237B57F8003DCC92 /* ExceptionHandlingHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92E98B89237B57F8003DCC92 /* ExceptionHandlingHelper.swift */; };
+		92E98B8B237B5975003DCC92 /* SleepDataAccess.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92095FA62378CADF00A20BBE /* SleepDataAccess.swift */; };
+		92E98B8C237B5978003DCC92 /* SleepDataAccessDev.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92095F9F2378C2C700A20BBE /* SleepDataAccessDev.swift */; };
 		92F6C637234EA2B000B17DB4 /* RealmAccess.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92F6C636234EA2B000B17DB4 /* RealmAccess.swift */; };
 		92F6C63D234EA3BC00B17DB4 /* AlertCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92F6C63C234EA3BC00B17DB4 /* AlertCenter.swift */; };
 		92F6C63F234EA3F400B17DB4 /* NotificationAlertType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92F6C63E234EA3F400B17DB4 /* NotificationAlertType.swift */; };
@@ -40,7 +42,6 @@
 		B5ED82B92373A07000B1C442 /* DetailCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5ED82B42373A07000B1C442 /* DetailCoordinator.swift */; };
 		B5ED82BA2373A07000B1C442 /* RegimeCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5ED82B52373A07000B1C442 /* RegimeCoordinator.swift */; };
 		B5ED82BB2373A07000B1C442 /* TabBarCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5ED82B62373A07000B1C442 /* TabBarCoordinator.swift */; };
-		B9619A6D2364408300566520 /* ExceptionHandlingHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9619A6C2364408300566520 /* ExceptionHandlingHelper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +72,8 @@
 		92578BE9234E57D70001510D /* BabySleepTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BabySleepTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		92578BED234E57D70001510D /* BabySleepTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BabySleepTests.swift; sourceTree = "<group>"; };
 		92578BEF234E57D70001510D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		92E98B84237B56D5003DCC92 /* SleepRealm.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SleepRealm.swift; sourceTree = "<group>"; };
+		92E98B89237B57F8003DCC92 /* ExceptionHandlingHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExceptionHandlingHelper.swift; sourceTree = "<group>"; };
 		92F6C636234EA2B000B17DB4 /* RealmAccess.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmAccess.swift; sourceTree = "<group>"; };
 		92F6C63C234EA3BC00B17DB4 /* AlertCenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertCenter.swift; sourceTree = "<group>"; };
 		92F6C63E234EA3F400B17DB4 /* NotificationAlertType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationAlertType.swift; sourceTree = "<group>"; };
@@ -121,7 +124,7 @@
 		92095F9C2378B80C00A20BBE /* Realm Entities */ = {
 			isa = PBXGroup;
 			children = (
-				CE2E5E99236779BF0085C6B4 /* SleepRealm.swift */,
+				92E98B84237B56D5003DCC92 /* SleepRealm.swift */,
 			);
 			path = "Realm Entities";
 			sourceTree = "<group>";
@@ -142,6 +145,7 @@
 				92578BD4234E57D50001510D /* Products */,
 				C51B4055A7AEC9FAAB2BC223 /* Pods */,
 				E7D2155D74B20F0EB095438D /* Frameworks */,
+				92E98B83237B5628003DCC92 /* Recovered References */,
 			);
 			sourceTree = "<group>";
 		};
@@ -172,11 +176,18 @@
 			path = BabySleepTests;
 			sourceTree = "<group>";
 		};
+		92E98B83237B5628003DCC92 /* Recovered References */ = {
+			isa = PBXGroup;
+			children = (
+				B9619A6C2364408300566520 /* ExceptionHandlingHelper.swift */,
+			);
+			name = "Recovered References";
+			sourceTree = "<group>";
+		};
 		92F6C62C234E7C5600B17DB4 /* Application */ = {
 			isa = PBXGroup;
 			children = (
 				92F6C62D234E7C7800B17DB4 /* Common */,
-				92095FA32378CA9700A20BBE /* Aliases.swift */,
 				92F6C634234E7D6800B17DB4 /* Flow */,
 				92F6C633234E7D5900B17DB4 /* Entities */,
 			);
@@ -186,6 +197,7 @@
 		92F6C62D234E7C7800B17DB4 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				92095FA32378CA9700A20BBE /* Aliases.swift */,
 				92578BD6234E57D50001510D /* AppDelegate.swift */,
 				92F6C62E234E7C9B00B17DB4 /* Extensions */,
 				92F6C62F234E7CAF00B17DB4 /* Lib */,
@@ -208,6 +220,7 @@
 			children = (
 				92F6C63B234EA36600B17DB4 /* Alert Center */,
 				92F6C636234EA2B000B17DB4 /* RealmAccess.swift */,
+				92E98B89237B57F8003DCC92 /* ExceptionHandlingHelper.swift */,
 			);
 			path = Lib;
 			sourceTree = "<group>";
@@ -587,20 +600,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				92E98B8A237B57F8003DCC92 /* ExceptionHandlingHelper.swift in Sources */,
+				92E98B8C237B5978003DCC92 /* SleepDataAccessDev.swift in Sources */,
 				B5ED82A12373A04600B1C442 /* BSCoordinatorFactoryDev.swift in Sources */,
 				B59006ED2379BE4F00C6D0BF /* ViewModelFactoryDev.swift in Sources */,
 				B59006EF2379BE5C00C6D0BF /* ViewControllerFactory.swift in Sources */,
 				B5ED82BB2373A07000B1C442 /* TabBarCoordinator.swift in Sources */,
-				B9619A6D2364408300566520 /* ExceptionHandlingHelper.swift in Sources */,
 				B5ED82BA2373A07000B1C442 /* RegimeCoordinator.swift in Sources */,
 				B5ED82742373A00F00B1C442 /* DetailViewModel.swift in Sources */,
-				92F6C63A234EA34800B17DB4 /* Identifiable.swift in Sources */,
+				92E98B8B237B5975003DCC92 /* SleepDataAccess.swift in Sources */,
 				B5ED82A22373A04600B1C442 /* BSCoordinatorFactory.swift in Sources */,
 				B5ED82B82373A07000B1C442 /* ReportCoordinator.swift in Sources */,
+				92E98B85237B56D5003DCC92 /* SleepRealm.swift in Sources */,
 				B5ED82732373A00F00B1C442 /* DetailViewController.swift in Sources */,
 				B5ED82B72373A07000B1C442 /* TrainingCoordinator.swift in Sources */,
 				B5ED827A2373A00F00B1C442 /* TrainingViewModel.swift in Sources */,
 				B5ED82782373A00F00B1C442 /* ReportViewController.swift in Sources */,
+				92E98B87237B576C003DCC92 /* Aliases.swift in Sources */,
 				92F6C637234EA2B000B17DB4 /* RealmAccess.swift in Sources */,
 				B5ED82752373A00F00B1C442 /* RegimeListViewController.swift in Sources */,
 				B5ED82B92373A07000B1C442 /* DetailCoordinator.swift in Sources */,
@@ -608,8 +624,10 @@
 				92F6C63D234EA3BC00B17DB4 /* AlertCenter.swift in Sources */,
 				B59006EB2379BE3F00C6D0BF /* ViewModelFactory.swift in Sources */,
 				B5ED82792373A00F00B1C442 /* TrainingViewController.swift in Sources */,
+				92E98B86237B56FC003DCC92 /* Sleep.swift in Sources */,
 				B59006F12379BE6400C6D0BF /* ViewControllerFactoryDev.swift in Sources */,
 				B5ED82762373A00F00B1C442 /* RegimeListViewModel.swift in Sources */,
+				92E98B88237B577C003DCC92 /* Identifiable.swift in Sources */,
 				B5ED82772373A00F00B1C442 /* ReportViewModel.swift in Sources */,
 				92F6C63F234EA3F400B17DB4 /* NotificationAlertType.swift in Sources */,
 			);
@@ -754,6 +772,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = Y6G74A59K6;
 				INFOPLIST_FILE = BabySleep/Resources/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
