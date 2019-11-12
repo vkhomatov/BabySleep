@@ -15,9 +15,9 @@ import YandexMobileMetrica
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-    let router = SampleCoordinator(coordinatorFactory: CoordinatorFactoryDev(),
-                                   viewControllerFactory: ViewControllerFactoryDev(),
-                                   viewModelFactory: ViewModelFactoryDev()).strongRouter
+
+    
+    let tabBarRouter = BSTabBarCoordinator()
 
     func application(_ application: UIApplication,
                      didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
@@ -25,7 +25,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let window = UIWindow(frame: UIScreen.main.bounds)
         self.window = window
 
-        router.setRoot(for: window)
+        tabBarRouter.setRoot(for: window)
         window.makeKeyAndVisible()
         
         return true
