@@ -29,27 +29,8 @@
 		B5ED82782373A00F00B1C442 /* ReportViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5ED826F2373A00F00B1C442 /* ReportViewController.swift */; };
 		B5ED82792373A00F00B1C442 /* TrainingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5ED82712373A00F00B1C442 /* TrainingViewController.swift */; };
 		B5ED827A2373A00F00B1C442 /* TrainingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5ED82722373A00F00B1C442 /* TrainingViewModel.swift */; };
-		B5ED82822373A03500B1C442 /* TrainingViewModelFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5ED827D2373A03500B1C442 /* TrainingViewModelFactory.swift */; };
-		B5ED82832373A03500B1C442 /* TrainingViewControllerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5ED827E2373A03500B1C442 /* TrainingViewControllerFactory.swift */; };
-		B5ED82842373A03500B1C442 /* TrainingViewControllerFactoryDev.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5ED82802373A03500B1C442 /* TrainingViewControllerFactoryDev.swift */; };
-		B5ED82852373A03500B1C442 /* TrainingViewModelFactoryDev.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5ED82812373A03500B1C442 /* TrainingViewModelFactoryDev.swift */; };
 		B5ED82A12373A04600B1C442 /* BSCoordinatorFactoryDev.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5ED82872373A04500B1C442 /* BSCoordinatorFactoryDev.swift */; };
 		B5ED82A22373A04600B1C442 /* BSCoordinatorFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5ED82882373A04500B1C442 /* BSCoordinatorFactory.swift */; };
-		B5ED82A32373A04600B1C442 /* ReportViewModelFactoryDev.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5ED828B2373A04500B1C442 /* ReportViewModelFactoryDev.swift */; };
-		B5ED82A42373A04600B1C442 /* ReportViewControllerFactoryDev.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5ED828C2373A04500B1C442 /* ReportViewControllerFactoryDev.swift */; };
-		B5ED82A52373A04600B1C442 /* ReportViewModelFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5ED828E2373A04500B1C442 /* ReportViewModelFactory.swift */; };
-		B5ED82A62373A04600B1C442 /* ReportViewControllerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5ED828F2373A04500B1C442 /* ReportViewControllerFactory.swift */; };
-		B5ED82A72373A04600B1C442 /* DetailViewModelFactoryDev.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5ED82922373A04500B1C442 /* DetailViewModelFactoryDev.swift */; };
-		B5ED82A82373A04600B1C442 /* DetailViewControllerFactoryDev.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5ED82932373A04500B1C442 /* DetailViewControllerFactoryDev.swift */; };
-		B5ED82A92373A04600B1C442 /* DetailViewModelFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5ED82952373A04500B1C442 /* DetailViewModelFactory.swift */; };
-		B5ED82AA2373A04600B1C442 /* DetailViewControllerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5ED82962373A04500B1C442 /* DetailViewControllerFactory.swift */; };
-		B5ED82AB2373A04600B1C442 /* RegimeCorrdinatorFactoryDev.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5ED82992373A04600B1C442 /* RegimeCorrdinatorFactoryDev.swift */; };
-		B5ED82AC2373A04600B1C442 /* RegimeViewControllerFactoryDev.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5ED829A2373A04600B1C442 /* RegimeViewControllerFactoryDev.swift */; };
-		B5ED82AD2373A04600B1C442 /* RegimeViewModelFactoryDev.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5ED829B2373A04600B1C442 /* RegimeViewModelFactoryDev.swift */; };
-		B5ED82AE2373A04600B1C442 /* RegimeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5ED829D2373A04600B1C442 /* RegimeViewController.swift */; };
-		B5ED82AF2373A04600B1C442 /* RegimeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5ED829E2373A04600B1C442 /* RegimeViewModel.swift */; };
-		B5ED82B02373A04600B1C442 /* RegimeViewModelFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5ED829F2373A04600B1C442 /* RegimeViewModelFactory.swift */; };
-		B5ED82B12373A04600B1C442 /* RegimeViewControllerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5ED82A02373A04600B1C442 /* RegimeViewControllerFactory.swift */; };
 		B5ED82B72373A07000B1C442 /* TrainingCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5ED82B22373A07000B1C442 /* TrainingCoordinator.swift */; };
 		B5ED82B82373A07000B1C442 /* ReportCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5ED82B32373A07000B1C442 /* ReportCoordinator.swift */; };
 		B5ED82B92373A07000B1C442 /* DetailCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5ED82B42373A07000B1C442 /* DetailCoordinator.swift */; };
@@ -97,27 +78,8 @@
 		B5ED826F2373A00F00B1C442 /* ReportViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReportViewController.swift; sourceTree = "<group>"; };
 		B5ED82712373A00F00B1C442 /* TrainingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrainingViewController.swift; sourceTree = "<group>"; };
 		B5ED82722373A00F00B1C442 /* TrainingViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrainingViewModel.swift; sourceTree = "<group>"; };
-		B5ED827D2373A03500B1C442 /* TrainingViewModelFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrainingViewModelFactory.swift; sourceTree = "<group>"; };
-		B5ED827E2373A03500B1C442 /* TrainingViewControllerFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrainingViewControllerFactory.swift; sourceTree = "<group>"; };
-		B5ED82802373A03500B1C442 /* TrainingViewControllerFactoryDev.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrainingViewControllerFactoryDev.swift; sourceTree = "<group>"; };
-		B5ED82812373A03500B1C442 /* TrainingViewModelFactoryDev.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrainingViewModelFactoryDev.swift; sourceTree = "<group>"; };
 		B5ED82872373A04500B1C442 /* BSCoordinatorFactoryDev.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BSCoordinatorFactoryDev.swift; sourceTree = "<group>"; };
 		B5ED82882373A04500B1C442 /* BSCoordinatorFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BSCoordinatorFactory.swift; sourceTree = "<group>"; };
-		B5ED828B2373A04500B1C442 /* ReportViewModelFactoryDev.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReportViewModelFactoryDev.swift; sourceTree = "<group>"; };
-		B5ED828C2373A04500B1C442 /* ReportViewControllerFactoryDev.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReportViewControllerFactoryDev.swift; sourceTree = "<group>"; };
-		B5ED828E2373A04500B1C442 /* ReportViewModelFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReportViewModelFactory.swift; sourceTree = "<group>"; };
-		B5ED828F2373A04500B1C442 /* ReportViewControllerFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReportViewControllerFactory.swift; sourceTree = "<group>"; };
-		B5ED82922373A04500B1C442 /* DetailViewModelFactoryDev.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewModelFactoryDev.swift; sourceTree = "<group>"; };
-		B5ED82932373A04500B1C442 /* DetailViewControllerFactoryDev.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewControllerFactoryDev.swift; sourceTree = "<group>"; };
-		B5ED82952373A04500B1C442 /* DetailViewModelFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewModelFactory.swift; sourceTree = "<group>"; };
-		B5ED82962373A04500B1C442 /* DetailViewControllerFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewControllerFactory.swift; sourceTree = "<group>"; };
-		B5ED82992373A04600B1C442 /* RegimeCorrdinatorFactoryDev.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegimeCorrdinatorFactoryDev.swift; sourceTree = "<group>"; };
-		B5ED829A2373A04600B1C442 /* RegimeViewControllerFactoryDev.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegimeViewControllerFactoryDev.swift; sourceTree = "<group>"; };
-		B5ED829B2373A04600B1C442 /* RegimeViewModelFactoryDev.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegimeViewModelFactoryDev.swift; sourceTree = "<group>"; };
-		B5ED829D2373A04600B1C442 /* RegimeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegimeViewController.swift; sourceTree = "<group>"; };
-		B5ED829E2373A04600B1C442 /* RegimeViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegimeViewModel.swift; sourceTree = "<group>"; };
-		B5ED829F2373A04600B1C442 /* RegimeViewModelFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegimeViewModelFactory.swift; sourceTree = "<group>"; };
-		B5ED82A02373A04600B1C442 /* RegimeViewControllerFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegimeViewControllerFactory.swift; sourceTree = "<group>"; };
 		B5ED82B22373A07000B1C442 /* TrainingCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrainingCoordinator.swift; sourceTree = "<group>"; };
 		B5ED82B32373A07000B1C442 /* ReportCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReportCoordinator.swift; sourceTree = "<group>"; };
 		B5ED82B42373A07000B1C442 /* DetailCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailCoordinator.swift; sourceTree = "<group>"; };
@@ -232,10 +194,6 @@
 				B59006E92379BDF900C6D0BF /* ViewModel */,
 				B59006E82379BDEF00C6D0BF /* ViewController */,
 				B5ED82862373A04500B1C442 /* Coordinator */,
-				B5ED82902373A04500B1C442 /* Detail */,
-				B5ED82972373A04600B1C442 /* Regime */,
-				B5ED82892373A04500B1C442 /* Reports */,
-				B5ED827B2373A03500B1C442 /* Training */,
 			);
 			path = Factories;
 			sourceTree = "<group>";
@@ -246,8 +204,8 @@
 				B5ED82B42373A07000B1C442 /* DetailCoordinator.swift */,
 				B5ED82B52373A07000B1C442 /* RegimeCoordinator.swift */,
 				B5ED82B32373A07000B1C442 /* ReportCoordinator.swift */,
-				B5ED82B62373A07000B1C442 /* TabBarCoordinator.swift */,
 				B5ED82B22373A07000B1C442 /* TrainingCoordinator.swift */,
+				B5ED82B62373A07000B1C442 /* TabBarCoordinator.swift */,
 			);
 			path = Coordinators;
 			sourceTree = "<group>";
@@ -359,33 +317,6 @@
 			path = TrainingVC;
 			sourceTree = "<group>";
 		};
-		B5ED827B2373A03500B1C442 /* Training */ = {
-			isa = PBXGroup;
-			children = (
-				B5ED827C2373A03500B1C442 /* Abstraction */,
-				B5ED827F2373A03500B1C442 /* Implementation */,
-			);
-			path = Training;
-			sourceTree = "<group>";
-		};
-		B5ED827C2373A03500B1C442 /* Abstraction */ = {
-			isa = PBXGroup;
-			children = (
-				B5ED827D2373A03500B1C442 /* TrainingViewModelFactory.swift */,
-				B5ED827E2373A03500B1C442 /* TrainingViewControllerFactory.swift */,
-			);
-			path = Abstraction;
-			sourceTree = "<group>";
-		};
-		B5ED827F2373A03500B1C442 /* Implementation */ = {
-			isa = PBXGroup;
-			children = (
-				B5ED82802373A03500B1C442 /* TrainingViewControllerFactoryDev.swift */,
-				B5ED82812373A03500B1C442 /* TrainingViewModelFactoryDev.swift */,
-			);
-			path = Implementation;
-			sourceTree = "<group>";
-		};
 		B5ED82862373A04500B1C442 /* Coordinator */ = {
 			isa = PBXGroup;
 			children = (
@@ -393,90 +324,6 @@
 				B5ED82882373A04500B1C442 /* BSCoordinatorFactory.swift */,
 			);
 			path = Coordinator;
-			sourceTree = "<group>";
-		};
-		B5ED82892373A04500B1C442 /* Reports */ = {
-			isa = PBXGroup;
-			children = (
-				B5ED828A2373A04500B1C442 /* Implementation */,
-				B5ED828D2373A04500B1C442 /* Abstractions */,
-			);
-			path = Reports;
-			sourceTree = "<group>";
-		};
-		B5ED828A2373A04500B1C442 /* Implementation */ = {
-			isa = PBXGroup;
-			children = (
-				B5ED828B2373A04500B1C442 /* ReportViewModelFactoryDev.swift */,
-				B5ED828C2373A04500B1C442 /* ReportViewControllerFactoryDev.swift */,
-			);
-			path = Implementation;
-			sourceTree = "<group>";
-		};
-		B5ED828D2373A04500B1C442 /* Abstractions */ = {
-			isa = PBXGroup;
-			children = (
-				B5ED828E2373A04500B1C442 /* ReportViewModelFactory.swift */,
-				B5ED828F2373A04500B1C442 /* ReportViewControllerFactory.swift */,
-			);
-			path = Abstractions;
-			sourceTree = "<group>";
-		};
-		B5ED82902373A04500B1C442 /* Detail */ = {
-			isa = PBXGroup;
-			children = (
-				B5ED82912373A04500B1C442 /* Implementation */,
-				B5ED82942373A04500B1C442 /* Abstractions */,
-			);
-			path = Detail;
-			sourceTree = "<group>";
-		};
-		B5ED82912373A04500B1C442 /* Implementation */ = {
-			isa = PBXGroup;
-			children = (
-				B5ED82922373A04500B1C442 /* DetailViewModelFactoryDev.swift */,
-				B5ED82932373A04500B1C442 /* DetailViewControllerFactoryDev.swift */,
-			);
-			path = Implementation;
-			sourceTree = "<group>";
-		};
-		B5ED82942373A04500B1C442 /* Abstractions */ = {
-			isa = PBXGroup;
-			children = (
-				B5ED82952373A04500B1C442 /* DetailViewModelFactory.swift */,
-				B5ED82962373A04500B1C442 /* DetailViewControllerFactory.swift */,
-			);
-			path = Abstractions;
-			sourceTree = "<group>";
-		};
-		B5ED82972373A04600B1C442 /* Regime */ = {
-			isa = PBXGroup;
-			children = (
-				B5ED82982373A04600B1C442 /* Implementation */,
-				B5ED829C2373A04600B1C442 /* Abstractions */,
-			);
-			path = Regime;
-			sourceTree = "<group>";
-		};
-		B5ED82982373A04600B1C442 /* Implementation */ = {
-			isa = PBXGroup;
-			children = (
-				B5ED82992373A04600B1C442 /* RegimeCorrdinatorFactoryDev.swift */,
-				B5ED829A2373A04600B1C442 /* RegimeViewControllerFactoryDev.swift */,
-				B5ED829B2373A04600B1C442 /* RegimeViewModelFactoryDev.swift */,
-			);
-			path = Implementation;
-			sourceTree = "<group>";
-		};
-		B5ED829C2373A04600B1C442 /* Abstractions */ = {
-			isa = PBXGroup;
-			children = (
-				B5ED829D2373A04600B1C442 /* RegimeViewController.swift */,
-				B5ED829E2373A04600B1C442 /* RegimeViewModel.swift */,
-				B5ED829F2373A04600B1C442 /* RegimeViewModelFactory.swift */,
-				B5ED82A02373A04600B1C442 /* RegimeViewControllerFactory.swift */,
-			);
-			path = Abstractions;
 			sourceTree = "<group>";
 		};
 		C51B4055A7AEC9FAAB2BC223 /* Pods */ = {
@@ -722,48 +569,29 @@
 			files = (
 				B5ED82A12373A04600B1C442 /* BSCoordinatorFactoryDev.swift in Sources */,
 				B59006ED2379BE4F00C6D0BF /* ViewModelFactoryDev.swift in Sources */,
-				B5ED82A42373A04600B1C442 /* ReportViewControllerFactoryDev.swift in Sources */,
-				B5ED82AE2373A04600B1C442 /* RegimeViewController.swift in Sources */,
 				B59006EF2379BE5C00C6D0BF /* ViewControllerFactory.swift in Sources */,
 				B5ED82BB2373A07000B1C442 /* TabBarCoordinator.swift in Sources */,
 				B9619A6D2364408300566520 /* ExceptionHandlingHelper.swift in Sources */,
-				B5ED82852373A03500B1C442 /* TrainingViewModelFactoryDev.swift in Sources */,
 				B5ED82BA2373A07000B1C442 /* RegimeCoordinator.swift in Sources */,
-				B5ED82AC2373A04600B1C442 /* RegimeViewControllerFactoryDev.swift in Sources */,
-				B5ED82A72373A04600B1C442 /* DetailViewModelFactoryDev.swift in Sources */,
 				B5ED82742373A00F00B1C442 /* DetailViewModel.swift in Sources */,
 				92F6C63A234EA34800B17DB4 /* Identifiable.swift in Sources */,
-				B5ED82A92373A04600B1C442 /* DetailViewModelFactory.swift in Sources */,
 				B5ED82A22373A04600B1C442 /* BSCoordinatorFactory.swift in Sources */,
 				B5ED82B82373A07000B1C442 /* ReportCoordinator.swift in Sources */,
 				B5ED82732373A00F00B1C442 /* DetailViewController.swift in Sources */,
-				B5ED82AB2373A04600B1C442 /* RegimeCorrdinatorFactoryDev.swift in Sources */,
 				B5ED82B72373A07000B1C442 /* TrainingCoordinator.swift in Sources */,
 				B5ED827A2373A00F00B1C442 /* TrainingViewModel.swift in Sources */,
-				B5ED82AA2373A04600B1C442 /* DetailViewControllerFactory.swift in Sources */,
-				B5ED82A62373A04600B1C442 /* ReportViewControllerFactory.swift in Sources */,
-				B5ED82832373A03500B1C442 /* TrainingViewControllerFactory.swift in Sources */,
-				B5ED82822373A03500B1C442 /* TrainingViewModelFactory.swift in Sources */,
-				B5ED82B12373A04600B1C442 /* RegimeViewControllerFactory.swift in Sources */,
 				B5ED82782373A00F00B1C442 /* ReportViewController.swift in Sources */,
-				B5ED82AD2373A04600B1C442 /* RegimeViewModelFactoryDev.swift in Sources */,
 				92F6C637234EA2B000B17DB4 /* RealmAccess.swift in Sources */,
-				B5ED82AF2373A04600B1C442 /* RegimeViewModel.swift in Sources */,
-				B5ED82A52373A04600B1C442 /* ReportViewModelFactory.swift in Sources */,
 				B5ED82752373A00F00B1C442 /* RegimeListViewController.swift in Sources */,
 				B5ED82B92373A07000B1C442 /* DetailCoordinator.swift in Sources */,
 				92578BD7234E57D50001510D /* AppDelegate.swift in Sources */,
-				B5ED82842373A03500B1C442 /* TrainingViewControllerFactoryDev.swift in Sources */,
 				92F6C63D234EA3BC00B17DB4 /* AlertCenter.swift in Sources */,
 				B59006EB2379BE3F00C6D0BF /* ViewModelFactory.swift in Sources */,
-				B5ED82A32373A04600B1C442 /* ReportViewModelFactoryDev.swift in Sources */,
 				B5ED82792373A00F00B1C442 /* TrainingViewController.swift in Sources */,
-				B5ED82A82373A04600B1C442 /* DetailViewControllerFactoryDev.swift in Sources */,
 				B59006F12379BE6400C6D0BF /* ViewControllerFactoryDev.swift in Sources */,
 				B5ED82762373A00F00B1C442 /* RegimeListViewModel.swift in Sources */,
 				B5ED82772373A00F00B1C442 /* ReportViewModel.swift in Sources */,
 				92F6C63F234EA3F400B17DB4 /* NotificationAlertType.swift in Sources */,
-				B5ED82B02373A04600B1C442 /* RegimeViewModelFactory.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

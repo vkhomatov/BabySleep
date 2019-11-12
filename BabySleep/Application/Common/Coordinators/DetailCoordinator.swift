@@ -15,12 +15,12 @@ enum DetailRoute: Route {
 class DetailCoordinator: NavigationCoordinator<DetailRoute> {
         
     private let coordinatorFactory: BSCoordinatorFactory
-    private let viewControllerFactory: DetailViewControllerFactory
-    private let viewModelFactory: DetailViewModelFactory
+    private let viewControllerFactory: ViewControllerFactory
+    private let viewModelFactory: ViewModelFactory
     
     init(coordinatorFactory: BSCoordinatorFactory,
-         viewControllerFactory: DetailViewControllerFactory,
-         viewModelFactory: DetailViewModelFactory) {
+         viewControllerFactory: ViewControllerFactory,
+         viewModelFactory: ViewModelFactory) {
         
         self.coordinatorFactory = coordinatorFactory
         self.viewControllerFactory = viewControllerFactory

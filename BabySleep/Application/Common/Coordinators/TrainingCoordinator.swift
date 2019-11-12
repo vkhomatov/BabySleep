@@ -16,12 +16,12 @@ enum TrainingRoute: Route {
 final class TrainingCoordinator: NavigationCoordinator<TrainingRoute> {
     
     private let coordinatorFactory: BSCoordinatorFactory
-    private let viewControllerFactory: TrainingViewControllerFactory
-    private let viewModelFactory: TrainingViewModelFactory
+    private let viewControllerFactory: ViewControllerFactory
+    private let viewModelFactory: ViewModelFactory
     
     init(coordinatorFactory: BSCoordinatorFactory,
-         viewControllerFactory: TrainingViewControllerFactory,
-         viewModelFactory: TrainingViewModelFactory) {
+         viewControllerFactory: ViewControllerFactory,
+         viewModelFactory: ViewModelFactory) {
         
         self.coordinatorFactory = coordinatorFactory
         self.viewControllerFactory = viewControllerFactory

@@ -6,4 +6,23 @@
 //  Copyright © 2019 Денис Львович. All rights reserved.
 //
 
-import Foundation
+final class ViewModelFactoryDev: ViewModelFactory {
+    
+    func makeRegimeListViewModel() -> RegimeListViewModel {
+        return RegimeListViewModel()
+    }
+    
+    func makeReportViewModel() -> ReportViewModel {
+        return ReportViewModel()
+    }
+    
+    func makeTrainingViewModel() -> TrainingViewModel {
+        return TrainingViewModel()
+    }
+    
+    
+    func makeDetailTableViewModel() -> DetailViewModel {
+        return DetailViewModel()
+    }
+    
+}

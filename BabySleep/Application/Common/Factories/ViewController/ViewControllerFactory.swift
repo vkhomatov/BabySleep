@@ -6,4 +6,21 @@
 //  Copyright © 2019 Денис Львович. All rights reserved.
 //
 
-import Foundation
+import XCoordinator
+
+protocol ViewControllerFactory {
+    
+    func makeOptionTable(router: UnownedRouter<DetailRoute>,
+                         model: DetailViewModel) -> DetailViewController
+    
+    func makeRegimeList(router: UnownedRouter<RegimeRoute>,
+                        model: RegimeListViewModel) -> RegimeListViewController
+    
+    func makeReportList(router: UnownedRouter<ReportRoute>,
+                        model: ReportViewModel) -> ReportViewController
+    
+    func makeTrainingViewController(router: UnownedRouter<TrainingRoute>,
+                                    model: TrainingViewModel) -> TrainingViewController
+    
+    
+}

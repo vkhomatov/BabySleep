@@ -26,17 +26,17 @@ final class BSTabBarCoordinator: TabBarCoordinator<BSTabBarRoute> {
         
         let coordinatorFactory = BSCoordinatorFactoryDev()
         
-        let regimeVCFactory = RegimeViewControllerFactoryDev()
-        let regimeVMFactory = RegimeViewModelFactoryDev()
+        let regimeVCFactory = ViewControllerFactoryDev()
+        let regimeVMFactory = ViewModelFactoryDev()
         
-        let reportVCFactory = ReportViewControllerFactoryDev()
-        let reportVMFactory = ReportViewModelFactoryDev()
+        let reportVCFactory = ViewControllerFactoryDev()
+        let reportVMFactory = ViewModelFactoryDev()
         
-        let trainingVCFactory = TrainingViewControllerFactoryDev()
-        let trainingVMFactory = TrainingViewModelFactoryDev()
+        let trainingVCFactory = ViewControllerFactoryDev()
+        let trainingVMFactory = ViewModelFactoryDev()
         
-        let detailVCFactory = DetailViewControllerFactoryDev()
-        let detailVMFactory = DetailViewModelFactoryDev()
+        let detailVCFactory = ViewControllerFactoryDev()
+        let detailVMFactory = ViewModelFactoryDev()
         
         
         let regimeCoordinator = coordinatorFactory.makeRegimeCoordinator(controllerFactory: regimeVCFactory, modelFactory: regimeVMFactory)

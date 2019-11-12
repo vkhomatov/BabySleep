@@ -16,12 +16,12 @@ enum ReportRoute: Route {
 class ReportCoordinator: NavigationCoordinator<ReportRoute> {
     
     private let coordinatorFactory: BSCoordinatorFactory
-    private let viewControllerFactory: ReportViewControllerFactory
-    private let viewModelFactory: ReportViewModelFactory
+    private let viewControllerFactory: ViewControllerFactory
+    private let viewModelFactory: ViewModelFactory
     
     init(coordinatorFactory: BSCoordinatorFactory,
-         viewControllerFactory: ReportViewControllerFactory,
-         viewModelFactory: ReportViewModelFactory) {
+         viewControllerFactory: ViewControllerFactory,
+         viewModelFactory: ViewModelFactory) {
         
         self.coordinatorFactory = coordinatorFactory
         self.viewControllerFactory = viewControllerFactory

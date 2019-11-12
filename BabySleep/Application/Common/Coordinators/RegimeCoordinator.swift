@@ -16,12 +16,12 @@ enum RegimeRoute: Route {
 class RegimeCoordinator: NavigationCoordinator<RegimeRoute> {
     
     private let coordinatorFactory: BSCoordinatorFactory
-    private let viewControllerFactory: RegimeViewControllerFactory
-    private let viewModelFactory: RegimeViewModelFactory
+    private let viewControllerFactory: ViewControllerFactory
+    private let viewModelFactory: ViewModelFactory
     
     init(coordinatorFactory: BSCoordinatorFactory,
-         viewControllerFactory: RegimeViewControllerFactory,
-         viewModelFactory: RegimeViewModelFactory) {
+         viewControllerFactory: ViewControllerFactory,
+         viewModelFactory: ViewModelFactory) {
         
         self.coordinatorFactory = coordinatorFactory
         self.viewControllerFactory = viewControllerFactory

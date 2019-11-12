@@ -8,16 +8,16 @@
 
 protocol BSCoordinatorFactory {
     
-    func makeRegimeCoordinator(controllerFactory: RegimeViewControllerFactory,
-                               modelFactory: RegimeViewModelFactory) -> RegimeCoordinator
+    func makeRegimeCoordinator(controllerFactory: ViewControllerFactory,
+                               modelFactory: ViewModelFactory) -> RegimeCoordinator
     
-    func makeReportCoordinator(controllerFactory: ReportViewControllerFactory,
-                               modelFactory: ReportViewModelFactory) -> ReportCoordinator
+    func makeReportCoordinator(controllerFactory: ViewControllerFactory,
+                               modelFactory: ViewModelFactory) -> ReportCoordinator
     
-    func makeTrainingCooordinator(controllerFactory: TrainingViewControllerFactory,
-                                  modelFactory: TrainingViewModelFactory) -> TrainingCoordinator
+    func makeTrainingCooordinator(controllerFactory: ViewControllerFactory,
+                                  modelFactory: ViewModelFactory) -> TrainingCoordinator
     
-    func makeDetailCoordinator(controllerFactory: DetailViewControllerFactory,
-                               modelFactory: DetailViewModelFactory) -> DetailCoordinator
+    func makeDetailCoordinator(controllerFactory: ViewControllerFactory,
+                               modelFactory: ViewModelFactory) -> DetailCoordinator
     
 }
