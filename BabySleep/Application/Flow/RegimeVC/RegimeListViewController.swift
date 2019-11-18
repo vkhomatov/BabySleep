@@ -14,6 +14,11 @@ class RegimeListViewController: UIViewController {
     private let model: RegimeListViewModel
     private let router: UnownedRouter<RegimeRoute>
 
+    private lazy var mainView: RegimeView = {
+        let rect = self.view.frame
+        return RegimeView(frame: rect)
+    }()
+
     init(model: RegimeListViewModel, router: UnownedRouter<RegimeRoute>) {
         self.model = model
         self.router = router
@@ -23,14 +28,25 @@ class RegimeListViewController: UIViewController {
     required init?(coder: NSCoder) {
         fatalError()
     }
-    
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        self.view.backgroundColor = #colorLiteral(red: 0.9568627477, green: 0.6588235497, blue: 0.5450980663, alpha: 1)
-        
+        setupViews()
     }
-    
-    
+
+
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+    }
+
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+    }
+
+    private func setupViews() {
+
+        self.view = mainView
+        self.mainView.tableView.register(RegimeUnitCell.self, forCellReuseIdentifier: "regimeCell")
+    }
 }

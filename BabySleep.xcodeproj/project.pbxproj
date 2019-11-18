@@ -23,6 +23,13 @@
 		92F6C637234EA2B000B17DB4 /* RealmAccess.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92F6C636234EA2B000B17DB4 /* RealmAccess.swift */; };
 		92F6C63D234EA3BC00B17DB4 /* AlertCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92F6C63C234EA3BC00B17DB4 /* AlertCenter.swift */; };
 		92F6C63F234EA3F400B17DB4 /* NotificationAlertType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92F6C63E234EA3F400B17DB4 /* NotificationAlertType.swift */; };
+		92F94CAE2381E1F400C44B48 /* RegimeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92F94CAD2381E1F400C44B48 /* RegimeView.swift */; };
+		92F94CB12381F7DA00C44B48 /* RegimeUnitCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92F94CB02381F7DA00C44B48 /* RegimeUnitCell.swift */; };
+		92F94CB42381F82800C44B48 /* CalendarSwitcherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92F94CB32381F82800C44B48 /* CalendarSwitcherView.swift */; };
+		92F94CB62381F84D00C44B48 /* DateStatisticView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92F94CB52381F84D00C44B48 /* DateStatisticView.swift */; };
+		92F94CB82381F8C900C44B48 /* RegimeTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92F94CB72381F8C900C44B48 /* RegimeTableView.swift */; };
+		92F94CBA2381F92000C44B48 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92F94CB92381F92000C44B48 /* UIColor.swift */; };
+		92F94CBC2381F9BF00C44B48 /* Double.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92F94CBB2381F9BF00C44B48 /* Double.swift */; };
 		B59006EB2379BE3F00C6D0BF /* ViewModelFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = B59006EA2379BE3F00C6D0BF /* ViewModelFactory.swift */; };
 		B59006ED2379BE4F00C6D0BF /* ViewModelFactoryDev.swift in Sources */ = {isa = PBXBuildFile; fileRef = B59006EC2379BE4F00C6D0BF /* ViewModelFactoryDev.swift */; };
 		B59006EF2379BE5C00C6D0BF /* ViewControllerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = B59006EE2379BE5C00C6D0BF /* ViewControllerFactory.swift */; };
@@ -77,6 +84,13 @@
 		92F6C636234EA2B000B17DB4 /* RealmAccess.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmAccess.swift; sourceTree = "<group>"; };
 		92F6C63C234EA3BC00B17DB4 /* AlertCenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertCenter.swift; sourceTree = "<group>"; };
 		92F6C63E234EA3F400B17DB4 /* NotificationAlertType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationAlertType.swift; sourceTree = "<group>"; };
+		92F94CAD2381E1F400C44B48 /* RegimeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegimeView.swift; sourceTree = "<group>"; };
+		92F94CB02381F7DA00C44B48 /* RegimeUnitCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegimeUnitCell.swift; sourceTree = "<group>"; };
+		92F94CB32381F82800C44B48 /* CalendarSwitcherView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarSwitcherView.swift; sourceTree = "<group>"; };
+		92F94CB52381F84D00C44B48 /* DateStatisticView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateStatisticView.swift; sourceTree = "<group>"; };
+		92F94CB72381F8C900C44B48 /* RegimeTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegimeTableView.swift; sourceTree = "<group>"; };
+		92F94CB92381F92000C44B48 /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
+		92F94CBB2381F9BF00C44B48 /* Double.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Double.swift; sourceTree = "<group>"; };
 		B59006EA2379BE3F00C6D0BF /* ViewModelFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelFactory.swift; sourceTree = "<group>"; };
 		B59006EC2379BE4F00C6D0BF /* ViewModelFactoryDev.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelFactoryDev.swift; sourceTree = "<group>"; };
 		B59006EE2379BE5C00C6D0BF /* ViewControllerFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerFactory.swift; sourceTree = "<group>"; };
@@ -211,6 +225,8 @@
 		92F6C62E234E7C9B00B17DB4 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				92F94CB92381F92000C44B48 /* UIColor.swift */,
+				92F94CBB2381F9BF00C44B48 /* Double.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -296,6 +312,26 @@
 			path = "Alert Center";
 			sourceTree = "<group>";
 		};
+		92F94CAF2381E20500C44B48 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				92F94CB22381F7E300C44B48 /* Cells */,
+				92F94CAD2381E1F400C44B48 /* RegimeView.swift */,
+				92F94CB32381F82800C44B48 /* CalendarSwitcherView.swift */,
+				92F94CB52381F84D00C44B48 /* DateStatisticView.swift */,
+				92F94CB72381F8C900C44B48 /* RegimeTableView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		92F94CB22381F7E300C44B48 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				92F94CB02381F7DA00C44B48 /* RegimeUnitCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
 		B59006E82379BDEF00C6D0BF /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
@@ -326,6 +362,7 @@
 		B5ED826A2373A00F00B1C442 /* RegimeVC */ = {
 			isa = PBXGroup;
 			children = (
+				92F94CAF2381E20500C44B48 /* Views */,
 				B5ED826B2373A00F00B1C442 /* RegimeListViewController.swift */,
 				B5ED826C2373A00F00B1C442 /* RegimeListViewModel.swift */,
 			);
@@ -600,17 +637,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				92F94CBC2381F9BF00C44B48 /* Double.swift in Sources */,
 				92E98B8A237B57F8003DCC92 /* ExceptionHandlingHelper.swift in Sources */,
 				92E98B8C237B5978003DCC92 /* SleepDataAccessDev.swift in Sources */,
 				B5ED82A12373A04600B1C442 /* BSCoordinatorFactoryDev.swift in Sources */,
 				B59006ED2379BE4F00C6D0BF /* ViewModelFactoryDev.swift in Sources */,
 				B59006EF2379BE5C00C6D0BF /* ViewControllerFactory.swift in Sources */,
+				92F94CB62381F84D00C44B48 /* DateStatisticView.swift in Sources */,
 				B5ED82BB2373A07000B1C442 /* TabBarCoordinator.swift in Sources */,
 				B5ED82BA2373A07000B1C442 /* RegimeCoordinator.swift in Sources */,
 				B5ED82742373A00F00B1C442 /* DetailViewModel.swift in Sources */,
+				92F94CB12381F7DA00C44B48 /* RegimeUnitCell.swift in Sources */,
 				92E98B8B237B5975003DCC92 /* SleepDataAccess.swift in Sources */,
 				B5ED82A22373A04600B1C442 /* BSCoordinatorFactory.swift in Sources */,
 				B5ED82B82373A07000B1C442 /* ReportCoordinator.swift in Sources */,
+				92F94CBA2381F92000C44B48 /* UIColor.swift in Sources */,
 				92E98B85237B56D5003DCC92 /* SleepRealm.swift in Sources */,
 				B5ED82732373A00F00B1C442 /* DetailViewController.swift in Sources */,
 				B5ED82B72373A07000B1C442 /* TrainingCoordinator.swift in Sources */,
@@ -620,6 +661,7 @@
 				92F6C637234EA2B000B17DB4 /* RealmAccess.swift in Sources */,
 				B5ED82752373A00F00B1C442 /* RegimeListViewController.swift in Sources */,
 				B5ED82B92373A07000B1C442 /* DetailCoordinator.swift in Sources */,
+				92F94CB42381F82800C44B48 /* CalendarSwitcherView.swift in Sources */,
 				92578BD7234E57D50001510D /* AppDelegate.swift in Sources */,
 				92F6C63D234EA3BC00B17DB4 /* AlertCenter.swift in Sources */,
 				B59006EB2379BE3F00C6D0BF /* ViewModelFactory.swift in Sources */,
@@ -630,6 +672,8 @@
 				92E98B88237B577C003DCC92 /* Identifiable.swift in Sources */,
 				B5ED82772373A00F00B1C442 /* ReportViewModel.swift in Sources */,
 				92F6C63F234EA3F400B17DB4 /* NotificationAlertType.swift in Sources */,
+				92F94CAE2381E1F400C44B48 /* RegimeView.swift in Sources */,
+				92F94CB82381F8C900C44B48 /* RegimeTableView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
