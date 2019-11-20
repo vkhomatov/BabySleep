@@ -9,7 +9,7 @@
 import UIKit
 
 extension UIColor {
-    static var dustyTeal: UIColor {
+    static var mainColor: UIColor {
         UIColor(red: 79.0 / 255.0, green: 166.0 / 255.0, blue: 160.0 / 255.0, alpha: 1.0)
     }
 }

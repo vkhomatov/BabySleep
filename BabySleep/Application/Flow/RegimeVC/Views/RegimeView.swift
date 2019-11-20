@@ -33,7 +33,7 @@ class RegimeView: UIView {
         let sleepButton = UIButton(frame: .zero)
 
         sleepButton.setTitle("Заснул", for: .normal)
-        sleepButton.backgroundColor = .dustyTeal
+        sleepButton.backgroundColor = .mainColor
         sleepButton.titleLabel?.font = UIFont.systemFont(ofSize: 17.0.scaled, weight: .semibold)
         sleepButton.titleLabel?.textColor = .white
 
