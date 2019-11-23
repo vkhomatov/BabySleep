@@ -13,7 +13,7 @@ class CalendarSwitcherView: UIView {
 
     lazy var dateLabel: UILabel = {
         let label = UILabel()
-        label.font = UIFont(name: "SFProText-Regular", size: 17.0.scaled)
+        label.font = UIFont.systemFont(ofSize: 17.0.scaled)
         label.textColor = .black
 
         return label

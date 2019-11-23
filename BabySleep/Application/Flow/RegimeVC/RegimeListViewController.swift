@@ -33,6 +33,7 @@ class RegimeListViewController: UIViewController {
         super.viewDidLoad()
 
         setupViews()
+        setupDelegates()
     }
 
 
@@ -48,5 +49,84 @@ class RegimeListViewController: UIViewController {
 
         self.view = mainView
         self.mainView.tableView.register(RegimeUnitCell.self, forCellReuseIdentifier: "regimeCell")
+        self.mainView.tableView.register(CurrentStateCell.self, forCellReuseIdentifier: "stateCell")
     }
+
+    private func setupDelegates() {
+        mainView.tableView.delegate = self
+        mainView.tableView.dataSource = self
+    }
+}
+
+extension RegimeListViewController: UITableViewDataSource {
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 4
+    }
+
+    func tableView(_ tableView: UITableView,
+                   numberOfRowsInSection section: Int) -> Int {
+
+        return section == 0 ? 1 : 2
+    }
+
+    func tableView(_ tableView: UITableView,
+                   viewForHeaderInSection section: Int) -> UIView? {
+
+        if section > 0 {
+            return RegimeTableSectionHeader()
+        }
+
+        return nil
+    }
+
+    func tableView(_ tableView: UITableView,
+                   heightForHeaderInSection section: Int) -> CGFloat {
+
+        if section > 0 {
+            return 42.0.scaled
+        }
+
+        return 0.0
+    }
+
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+
+        let cell: UITableViewCell
+
+        switch (indexPath.row, indexPath.section) {
+        case (0, 0):
+            cell = setupCurrentStateCellView(indexPath: indexPath)
+        default:
+            cell = setupRegimeUnitView(indexPath: indexPath)
+        }
+
+        return cell
+    }
+
+    private func setupRegimeUnitView(indexPath: IndexPath) -> RegimeUnitCell {
+        guard let cell = self.mainView.tableView
+            .dequeueReusableCell(withIdentifier: "regimeCell",
+                                 for: indexPath) as? RegimeUnitCell else {
+
+                                    assertionFailure()
+                                    return RegimeUnitCell()
+        }
+
+        return cell
+    }
+
+    private func setupCurrentStateCellView(indexPath: IndexPath) -> CurrentStateCell {
+        guard let cell = self.mainView.tableView
+            .dequeueReusableCell(withIdentifier: "stateCell",
+                                 for: indexPath) as? CurrentStateCell else {
+
+                                    assertionFailure()
+                                    return CurrentStateCell()
+        }
+
+        return cell
+    }
+}
+
+extension RegimeListViewController: UITableViewDelegate {
 }

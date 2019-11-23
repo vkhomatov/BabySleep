@@ -14,10 +14,10 @@ class RegimeTableView: UITableView {
 
         super.init(frame: frame, style: style)
 
-        self.rowHeight = 55.0.scaled
+        self.rowHeight = 78.0.scaled
 
-        self.backgroundColor = .yellow
-        self.setupSubviews()
+        self.backgroundColor = .tableBackground
+        self.separatorStyle = .none
     }
 
     required init?(coder aDecoder: NSCoder) {
@@ -26,8 +26,5 @@ class RegimeTableView: UITableView {
 
     override func layoutSubviews() {
         super.layoutSubviews()
-    }
-
-    private func setupSubviews() {
     }
 }

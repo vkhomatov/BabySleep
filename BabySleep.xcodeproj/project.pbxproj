@@ -13,6 +13,9 @@
 		92578BD7234E57D50001510D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92578BD6234E57D50001510D /* AppDelegate.swift */; };
 		92578BE0234E57D70001510D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 92578BDF234E57D70001510D /* Assets.xcassets */; };
 		92578BEE234E57D70001510D /* BabySleepTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92578BED234E57D70001510D /* BabySleepTests.swift */; };
+		9288319123873D4300641D0B /* CurrentStateCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9288319023873D4300641D0B /* CurrentStateCell.swift */; };
+		928831932389C70E00641D0B /* RegimeTableSectionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 928831922389C70E00641D0B /* RegimeTableSectionHeaderView.swift */; };
+		928831952389CE5A00641D0B /* Int.swift in Sources */ = {isa = PBXBuildFile; fileRef = 928831942389CE5A00641D0B /* Int.swift */; };
 		92E98B85237B56D5003DCC92 /* SleepRealm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92E98B84237B56D5003DCC92 /* SleepRealm.swift */; };
 		92E98B86237B56FC003DCC92 /* Sleep.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92095F9D2378BB0400A20BBE /* Sleep.swift */; };
 		92E98B87237B576C003DCC92 /* Aliases.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92095FA32378CA9700A20BBE /* Aliases.swift */; };
@@ -79,6 +82,9 @@
 		92578BE9234E57D70001510D /* BabySleepTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BabySleepTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		92578BED234E57D70001510D /* BabySleepTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BabySleepTests.swift; sourceTree = "<group>"; };
 		92578BEF234E57D70001510D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9288319023873D4300641D0B /* CurrentStateCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentStateCell.swift; sourceTree = "<group>"; };
+		928831922389C70E00641D0B /* RegimeTableSectionHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegimeTableSectionHeaderView.swift; sourceTree = "<group>"; };
+		928831942389CE5A00641D0B /* Int.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Int.swift; sourceTree = "<group>"; };
 		92E98B84237B56D5003DCC92 /* SleepRealm.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SleepRealm.swift; sourceTree = "<group>"; };
 		92E98B89237B57F8003DCC92 /* ExceptionHandlingHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExceptionHandlingHelper.swift; sourceTree = "<group>"; };
 		92F6C636234EA2B000B17DB4 /* RealmAccess.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmAccess.swift; sourceTree = "<group>"; };
@@ -227,6 +233,7 @@
 			children = (
 				92F94CB92381F92000C44B48 /* UIColor.swift */,
 				92F94CBB2381F9BF00C44B48 /* Double.swift */,
+				928831942389CE5A00641D0B /* Int.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -320,6 +327,7 @@
 				92F94CB32381F82800C44B48 /* CalendarSwitcherView.swift */,
 				92F94CB52381F84D00C44B48 /* DateStatisticView.swift */,
 				92F94CB72381F8C900C44B48 /* RegimeTableView.swift */,
+				928831922389C70E00641D0B /* RegimeTableSectionHeaderView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -328,6 +336,7 @@
 			isa = PBXGroup;
 			children = (
 				92F94CB02381F7DA00C44B48 /* RegimeUnitCell.swift */,
+				9288319023873D4300641D0B /* CurrentStateCell.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -644,6 +653,7 @@
 				B59006ED2379BE4F00C6D0BF /* ViewModelFactoryDev.swift in Sources */,
 				B59006EF2379BE5C00C6D0BF /* ViewControllerFactory.swift in Sources */,
 				92F94CB62381F84D00C44B48 /* DateStatisticView.swift in Sources */,
+				928831952389CE5A00641D0B /* Int.swift in Sources */,
 				B5ED82BB2373A07000B1C442 /* TabBarCoordinator.swift in Sources */,
 				B5ED82BA2373A07000B1C442 /* RegimeCoordinator.swift in Sources */,
 				B5ED82742373A00F00B1C442 /* DetailViewModel.swift in Sources */,
@@ -654,10 +664,12 @@
 				92F94CBA2381F92000C44B48 /* UIColor.swift in Sources */,
 				92E98B85237B56D5003DCC92 /* SleepRealm.swift in Sources */,
 				B5ED82732373A00F00B1C442 /* DetailViewController.swift in Sources */,
+				928831932389C70E00641D0B /* RegimeTableSectionHeaderView.swift in Sources */,
 				B5ED82B72373A07000B1C442 /* TrainingCoordinator.swift in Sources */,
 				B5ED827A2373A00F00B1C442 /* TrainingViewModel.swift in Sources */,
 				B5ED82782373A00F00B1C442 /* ReportViewController.swift in Sources */,
 				92E98B87237B576C003DCC92 /* Aliases.swift in Sources */,
+				9288319123873D4300641D0B /* CurrentStateCell.swift in Sources */,
 				92F6C637234EA2B000B17DB4 /* RealmAccess.swift in Sources */,
 				B5ED82752373A00F00B1C442 /* RegimeListViewController.swift in Sources */,
 				B5ED82B92373A07000B1C442 /* DetailCoordinator.swift in Sources */,

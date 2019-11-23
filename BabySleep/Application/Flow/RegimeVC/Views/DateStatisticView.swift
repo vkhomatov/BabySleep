@@ -12,7 +12,7 @@ class DateStatisticView: UIView {
 
     private lazy var titleLabel: UILabel = {
         let label = UILabel()
-        label.font = UIFont(name: "SFProText-Regular", size: 13.0.scaled)
+        label.font = UIFont.systemFont(ofSize: 13.0.scaled)
         label.textColor = .white
         label.text = "Общее время сна"
 
@@ -91,7 +91,7 @@ class DateStatisticView: UIView {
 
         switch type {
         case .total:
-            let numFont = UIFont.systemFont(ofSize: 20.0.scaled, weight: .bold)
+            let numFont = UIFont.systemFont(ofSize: 20.0.scaled, weight: .semibold)
             let lettersFont = UIFont.systemFont(ofSize: 13.0.scaled, weight: .regular)
             let stringParams = [ (font: numFont, text: hoursNum),
                                  (font: lettersFont, text: hoursText),
@@ -102,8 +102,8 @@ class DateStatisticView: UIView {
             totalSleepTimeLabel.attributedText = mainString
 
         case .day:
-            let numFont = UIFont.systemFont(ofSize: 13.0.scaled, weight: .bold)
-            let lettersFont = UIFont.systemFont(ofSize: 13.0.scaled, weight: .regular)
+            let numFont = UIFont.systemFont(ofSize: 13.0.scaled, weight: .semibold)
+            let lettersFont = UIFont.systemFont(ofSize: 11.0.scaled, weight: .regular)
             let stringParams = [ (font: numFont, text: hoursNum),
                                  (font: lettersFont, text: hoursText),
                                  (font: numFont, text: minutesNum),
@@ -113,8 +113,8 @@ class DateStatisticView: UIView {
             daySleepTimeLabel.attributedText = mainString
 
         case .night:
-            let numFont = UIFont.systemFont(ofSize: 13.0.scaled, weight: .bold)
-            let lettersFont = UIFont.systemFont(ofSize: 13.0.scaled, weight: .regular)
+            let numFont = UIFont.systemFont(ofSize: 13.0.scaled, weight: .semibold)
+            let lettersFont = UIFont.systemFont(ofSize: 11.0.scaled, weight: .regular)
             let stringParams = [ (font: numFont, text: hoursNum),
                                  (font: lettersFont, text: hoursText),
                                  (font: numFont, text: minutesNum),
