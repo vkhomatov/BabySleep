@@ -10,9 +10,11 @@ import XCoordinator
 
 protocol ViewControllerFactory {
     
-    func makeViewController(router: UnownedRouter<SampleRoute>,
-                            model: ViewModel) -> ViewController
-
-    func makeAnotherViewController(router: UnownedRouter<SampleRoute>,
-                                   model: AnotherViewModel) -> AnotherViewController
+    
+    func makePageViewController(router: UnownedRouter<RegistrationRoute>,
+                                model: PageViewModel) -> PageViewController
+    
+    func makeNewEdgeCategoryViewController(router: UnownedRouter<NewEdgeCategoryRoute>,
+                                           model: NewEdgeCategoryModel) -> NewEdgeCategoryViewController
+    
 }

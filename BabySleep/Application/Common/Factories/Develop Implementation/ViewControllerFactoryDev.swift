@@ -9,19 +9,19 @@
 import XCoordinator
 
 final class ViewControllerFactoryDev: ViewControllerFactory {
-
+    
+   
     let viewModelFactory = ViewModelFactoryDev()
-
-    func makeViewController(router: UnownedRouter<SampleRoute>,
-                            model: ViewModel) -> ViewController {
-        return ViewController(model: model,
-                              router: router)
+    
+    func makePageViewController(router: UnownedRouter<RegistrationRoute>, model: PageViewModel) -> PageViewController {
+            return PageViewController(model: model,
+            router: router)
+       }
+    
+    func makeNewEdgeCategoryViewController(router: UnownedRouter<NewEdgeCategoryRoute>, model: NewEdgeCategoryModel) -> NewEdgeCategoryViewController {
+         return NewEdgeCategoryViewController(model: model,
+         router: router)
     }
-
-    func makeAnotherViewController(router: UnownedRouter<SampleRoute>,
-                                   model: AnotherViewModel) -> AnotherViewController {
-
-        return AnotherViewController(model: model,
-                                     router: router)
-    }
+    
+    
 }

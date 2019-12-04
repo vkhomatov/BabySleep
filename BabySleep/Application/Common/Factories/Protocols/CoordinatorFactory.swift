@@ -8,6 +8,11 @@
 
 protocol CoordinatorFactory {
 
-    func makeSampleCoordinator(controllerFactory: ViewControllerFactory,
-                               modelFactory: ViewModelFactory) -> SampleCoordinator
+        
+    func makeRegistrationCoordinator(controllerFactory: ViewControllerFactory,
+                                     modelFactory: ViewModelFactory) -> RegistrationCoordinator
+    
+    func makeNewEdgeCategoryCoordinator(controllerFactory: ViewControllerFactory,
+                                        modelFactory: ViewModelFactory) -> NewEdgeCategoryCoordinator
+    
 }

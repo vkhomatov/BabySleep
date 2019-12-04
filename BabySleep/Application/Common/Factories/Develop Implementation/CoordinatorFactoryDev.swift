@@ -8,10 +8,16 @@
 
 final class CoordinatorFactoryDev: CoordinatorFactory {
     
-    func makeSampleCoordinator(controllerFactory: ViewControllerFactory,
-                               modelFactory: ViewModelFactory) -> SampleCoordinator {
-        return SampleCoordinator(coordinatorFactory: self,
-                                 viewControllerFactory: controllerFactory,
-                                 viewModelFactory: modelFactory)
+      func makeRegistrationCoordinator(controllerFactory: ViewControllerFactory, modelFactory: ViewModelFactory) -> RegistrationCoordinator {
+          return RegistrationCoordinator(coordinatorFactory: self,
+          viewControllerFactory: controllerFactory,
+          viewModelFactory: modelFactory)
+      }
+    
+    func makeNewEdgeCategoryCoordinator(controllerFactory: ViewControllerFactory, modelFactory: ViewModelFactory) -> NewEdgeCategoryCoordinator {
+        return NewEdgeCategoryCoordinator(coordinatorFactory: self,
+        viewControllerFactory: controllerFactory,
+        viewModelFactory: modelFactory)
     }
+    
 }

@@ -7,6 +7,6 @@
 //
 
 protocol ViewModelFactory {
-    func makeViewModel() -> ViewModel
-    func makeAnotherViewModel() -> AnotherViewModel
+    func makePageViewModel() -> PageViewModel
+    func makeNewEdgeCategoryModel() -> NewEdgeCategoryModel
 }

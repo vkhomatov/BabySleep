@@ -7,12 +7,13 @@
 //
 
 final class ViewModelFactoryDev: ViewModelFactory {
-
-    func makeViewModel() -> ViewModel {
-        return ViewModel()
+    
+    func makePageViewModel() -> PageViewModel {
+             return PageViewModel()
     }
-
-    func makeAnotherViewModel() -> AnotherViewModel {
-        return AnotherViewModel()
+    
+    func makeNewEdgeCategoryModel() -> NewEdgeCategoryModel {
+             return NewEdgeCategoryModel()
     }
+    
 }

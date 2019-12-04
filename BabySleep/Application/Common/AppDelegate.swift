@@ -15,17 +15,42 @@ import YandexMobileMetrica
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-    let router = SampleCoordinator(coordinatorFactory: CoordinatorFactoryDev(),
-                                   viewControllerFactory: ViewControllerFactoryDev(),
-                                   viewModelFactory: ViewModelFactoryDev()).strongRouter
+    
+    private var userD = UserDefaultsOperation()
+    
+    let router1 = RegistrationCoordinator(coordinatorFactory: CoordinatorFactoryDev(),
+    viewControllerFactory: ViewControllerFactoryDev(),
+    viewModelFactory: ViewModelFactoryDev()).strongRouter
+    
+    let router2 = NewEdgeCategoryCoordinator(coordinatorFactory: CoordinatorFactoryDev(),
+    viewControllerFactory: ViewControllerFactoryDev(),
+    viewModelFactory: ViewModelFactoryDev()).strongRouter
+    
 
     func application(_ application: UIApplication,
                      didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
 
         let window = UIWindow(frame: UIScreen.main.bounds)
         self.window = window
+        
+        if  userD.childRecord ?? false {
+            print("Запись UserDefaults есть")
+                     
+            print(userD.childNameRead ?? "Не удалось прочитать имя")
+            print(userD.childDOBRead ?? "Не удалось прочитать дату")
+            print(userD.childGenderRead ?? "Не удалось прочитать пол")
+            
+            router2.setRoot(for: window)
 
-        router.setRoot(for: window)
+        } else {
+            print("Записи UserDefaults нет")
+            
+            router1.setRoot(for: window)
+
+
+        }
+
+       // router.setRoot(for: window)
         window.makeKeyAndVisible()
         
         return true
