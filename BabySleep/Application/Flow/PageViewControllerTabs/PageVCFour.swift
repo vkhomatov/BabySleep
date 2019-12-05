@@ -48,6 +48,8 @@ class PageVCFour: UIViewController {
          setElementsSelectors()
         
          model.dateFormatter.dateFormat = "MM.dd.yyyy"
+         viewP.datePicker.minimumDate = model.minDate
+         viewP.datePicker.maximumDate = model.maxDate
         
          let hideKeyboardGesture = UITapGestureRecognizer(target: self, action: #selector(hideKeyboard))
         
@@ -59,7 +61,6 @@ class PageVCFour: UIViewController {
         
         viewP.childDOBTextField.addTarget(self, action: #selector(self.childDOBEditBegin), for: .editingDidBegin)
         
-       // viewP.childNameTextField.addTarget(self, action: #selector(self.childNameEditEnd), for: .editingDidEnd)
 
         viewP.boyButton.addTarget(self, action: #selector(self.boyButtonPressed), for: .touchUpInside)
         
@@ -71,7 +72,24 @@ class PageVCFour: UIViewController {
         
         if isOn {
         let date = model.dateFormatter.date(from: viewP.childDOBTextField.text ?? "")
-        
+      //  let date = model.dateFormatter.date(from "MM.dd.yyyy")
+
+        //viewP.datePicker.maximumDate = Date(timeIntervalSinceNow: 3153600000)
+
+        //print(date)
+       /*     if model.testDate(childDob: viewP.childDOBTextField.text ?? "") != true {
+                
+                date = Date()
+
+            } */
+            
+     /*   let formatter = DateFormatter()
+        formatter.dateFormat = "yyyy-MM-dd" // YOUR DATE FORMATE
+                
+
+        if let date = formatter.date(from: dateString) {
+              // IT CONTAIN YOUR DATE FORMATE
+        } */
             
         viewP.datePicker.setDate(date ?? Date(), animated: true)
         viewP.childDOBTextField.inputView = viewP.datePicker
@@ -86,6 +104,9 @@ class PageVCFour: UIViewController {
         
         viewP.setupDatePickerView()
         delegate?.setPickerView(view: viewP.datePicker)
+            
+      //  model.selectedDate = model.dateFormatter.string(from: viewP.datePicker.date)
+
 
         } else {
             
@@ -113,16 +134,6 @@ class PageVCFour: UIViewController {
     }
     
     
-/*    @objc private func childNameEditEnd() {
-         // print("Датапикер показался")
-        let name = viewP.childNameTextField.text
-        if (name?.count ?? 0 > 0) && (name?.first != " ") {
-            viewP.childNameTextField.text = " " + (name ?? "")
-        }
-
-         //datePickerOnOff(isOn: true)
-      } */
-    
     @objc private func childDOBEditBegin() {
        // print("Датапикер показался")
 
@@ -131,39 +142,36 @@ class PageVCFour: UIViewController {
     
     @objc private func boyButtonPressed() {
      // print("Кнопка Мальчик нажата")
-      model.childGender = true
       childGenderSwitch()
+      model.childGender = true
+      
 
     }
     
     @objc private func girlButtonPressed() {
      // print("Кнопка Девочка нажата")
-      model.childGender = false
       childGenderSwitch()
+      model.childGender = false
+      
     }
     
     
     @objc func doneAction() {
         
         datePickerOnOff(isOn: false)
+        model.selectedDate = model.dateFormatter.string(from: viewP.datePicker.date)
         viewP.childDOBTextField.text = (model.selectedDate)
-
-
-       // view.endEditing(true)
-      //  print("Датапикер спрятался")
     }
     
     @objc func datePickerValueChanged(_ sender: UIDatePicker) {
         
         model.selectedDate = model.dateFormatter.string(from: sender.date)
         viewP.childDOBTextField.text = (model.selectedDate)
-       // print("Дата \(model.selectedDate) сохранена в текстовом поле")
     }
     
     
     @objc func hideKeyboard() {
         datePickerOnOff(isOn: false)
-        //self.view.endEditing(true)
     }
     
 
@@ -175,9 +183,7 @@ class PageVCFour: UIViewController {
         delegate?.changeNextButtonTitle(text: newButtonTitle)
     
         model.lastPage = true
-        
-      //  print("Последнее окно открыто")
-        
+                
     }
 
      override func viewDidDisappear(_ anibmated: Bool) {
@@ -187,10 +193,6 @@ class PageVCFour: UIViewController {
         delegate?.changeNextButtonTitle(text: newButtonTitle)
         
         model.lastPage = false
-
-
-        //print("Последнее окно закрыто")
-
         
     }
 }

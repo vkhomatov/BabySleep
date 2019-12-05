@@ -222,13 +222,13 @@
 		92F6C62D234E7C7800B17DB4 /* Common */ = {
 			isa = PBXGroup;
 			children = (
-				5882145923957ACD00EA1CEA /* UserDefaults */,
 				92578BD6234E57D50001510D /* AppDelegate.swift */,
 				92F6C62E234E7C9B00B17DB4 /* Extensions */,
 				92F6C62F234E7CAF00B17DB4 /* Lib */,
 				92F6C632234E7D0800B17DB4 /* DBAccess */,
 				92F6C631234E7CF000B17DB4 /* Coordinators */,
 				92F6C630234E7CE200B17DB4 /* Factories */,
+				5882145923957ACD00EA1CEA /* UserDefaults */,
 			);
 			path = Common;
 			sourceTree = "<group>";

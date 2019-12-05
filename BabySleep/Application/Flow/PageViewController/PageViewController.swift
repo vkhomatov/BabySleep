@@ -87,6 +87,10 @@ class PageViewController: UIPageViewController {
                 nameChVC.text = ""
                 nameChVC.placeholder = model.childNamePlaceHolderTitle
               //  print("Неверное имя")
+                if !modelFour.testDate(childDob: dateCh) {
+                    dateChVC.text = ""
+                    dateChVC.placeholder = model.childDOBPlaceHolderTitle
+                }
                 return
             }
             
@@ -98,7 +102,9 @@ class PageViewController: UIPageViewController {
             }
             
             userD.saveChildData(childName: nameCh, childDOB: dateCh, itisBoy: modelFour.childGender)
-            print("Данные UserDefaults сохранены")
+        
+            
+            userD.printUDData()
                     
             
         }

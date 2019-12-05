@@ -27,12 +27,12 @@ class PageViewModel {
     let vcThree = PageVCThree()
     let vcFour = PageVCFour()
     
-    var pages: [UIViewController] = []
+    var pages = [UIViewController]()
     var currentIndex: Int = 0
     var nextIndex: Int = 0
     var prevIndex: Int = 0
- 
     
+ 
     func addViews() {
         pages.append(vcOne)
         pages.append(vcTwo)

@@ -9,14 +9,13 @@ import UIKit
 
 class UserDefaultsOperation {
     
-    // Функция сохранения в User Defaults
+       // Функция сохранения в User Defaults
        func saveChildData(childName: String, childDOB: String, itisBoy: Bool) {
             let userDefaults = UserDefaults.standard
             userDefaults.set(childName, forKey: "NAME")
             userDefaults.set(childDOB, forKey: "DOB")
             userDefaults.set(itisBoy, forKey: "GENDER")
             userDefaults.set(true, forKey: "RECORD")
-          //  print("Имя \(childName) и Дата \(childDOB) записаны в юзер дефаултс")
        }
        
        // Чтение пометки о существовании записи из User Defaults
@@ -41,6 +40,16 @@ class UserDefaultsOperation {
        var childGenderRead: Bool? {
            let userDefaultsGet = UserDefaults.standard
            return userDefaultsGet.object(forKey: "GENDER") as? Bool
+       }
+    
+        // функция для вывода значений UserDefaults в консоль
+       func printUDData() {
+        print("Данные UserDefaults:")
+        print("Имя: \(String(describing: childNameRead))")
+        print("Дата рождения: \(String(describing: childDOBRead))")
+        print("Мальчик?: \(String(describing: childGenderRead))")
+        print("Запись есть: \(String(describing: childRecord))")
+        
        }
 
     

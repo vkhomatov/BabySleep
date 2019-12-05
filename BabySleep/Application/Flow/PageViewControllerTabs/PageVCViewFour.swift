@@ -150,7 +150,6 @@ class PageVCViewFour: UIView {
         datePicker.datePickerMode = .date
         datePicker.timeZone = NSTimeZone.local
         datePicker.backgroundColor = UIColor.white
-        datePicker.maximumDate = Date()
 
         return datePicker
     }()

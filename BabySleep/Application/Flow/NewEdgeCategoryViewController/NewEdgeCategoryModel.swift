@@ -11,11 +11,14 @@ import UIKit
 class NewEdgeCategoryModel {
     
     func resetDefaults() {
-        let defaults = UserDefaults.standard
+        
+        guard let domain = Bundle.main.bundleIdentifier else { return }
+        UserDefaults.standard.removePersistentDomain(forName: domain)
+        UserDefaults.standard.synchronize()
+        /*  let defaults = UserDefaults.standard
         let dictionary = defaults.dictionaryRepresentation()
         dictionary.keys.forEach { key in
             defaults.removeObject(forKey: key)
-        }
+        } */
     }
-    
 }

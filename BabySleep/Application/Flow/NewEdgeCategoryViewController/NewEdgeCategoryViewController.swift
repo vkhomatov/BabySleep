@@ -11,6 +11,8 @@ import XCoordinator
 
 class NewEdgeCategoryViewController: UIViewController {
 
+    
+       let userD = UserDefaultsOperation()
            
        var model: NewEdgeCategoryModel
        let router: UnownedRouter<NewEdgeCategoryRoute>
@@ -47,7 +49,7 @@ class NewEdgeCategoryViewController: UIViewController {
         
            model.resetDefaults()
         
-           print("Данные UserDefaults стерты")
+           userD.printUDData()
        
       }
 

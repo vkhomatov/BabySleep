@@ -27,6 +27,9 @@ class PageVCModelFour {
     
     let dateFormatter = DateFormatter()
     
+    let minDate = Date(timeIntervalSinceReferenceDate: 31536000)
+    let maxDate = Date()
+    
     var selectedDate: String = ""
     var childGender = true
     var lastPage = false
@@ -39,48 +42,15 @@ class PageVCModelFour {
     
     // Функция проверки на корректность ввода даты
     func testDate(childDob: String) -> Bool {
-        let addedDateFormatter = DateFormatter()
-        addedDateFormatter.dateFormat = "MM.dd.yyyy"
-        
-        if addedDateFormatter.date(from: childDob) != nil {
-            return true
-        } else {
-            return false }
-        
-    }
-    
-/*    // Функция сохранения в User Defaults
-    func saveChildData(childName: String, childDOB: String, itisBoy: Bool) {
-         let userDefaults = UserDefaults.standard
-         userDefaults.set(childName, forKey: "NAME")
-         userDefaults.set(childDOB, forKey: "DOB")
-         userDefaults.set(itisBoy, forKey: "GENDER")
-         userDefaults.set(true, forKey: "RECORD")
-       //  print("Имя \(childName) и Дата \(childDOB) записаны в юзер дефаултс")
-    }
-    
-    // Чтение пометки о существовании записи из User Defaults
-    var childRecord: Bool? {
-         let userDefaultsGet = UserDefaults.standard
-         return userDefaultsGet.object(forKey: "RECORD") as? Bool
-    }
-    
-    // Чтение имени из User Defaults
-    var childNameRead: String? {
-         let userDefaultsGet = UserDefaults.standard
-         return userDefaultsGet.object(forKey: "NAME") as? String
-    }
-    
-    // Чтение даты из User Defaults
-    var childDOBRead: String? {
-        let userDefaultsGet = UserDefaults.standard
-        return userDefaultsGet.object(forKey: "DOB") as? String
-    }
-    
-    // Чтение пола из User Defaults
-    var childGenderRead: Bool? {
-        let userDefaultsGet = UserDefaults.standard
-        return userDefaultsGet.object(forKey: "GENDER") as? Bool
-    } */
 
+        guard let date = dateFormatter.date(from: childDob) else { return false }
+        
+        if date <= maxDate && date >= minDate {
+            return true
+        }
+        
+        return false
+    }
+    
+    
 }
