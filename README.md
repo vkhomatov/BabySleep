@@ -30,3 +30,13 @@
 
 Если вопросов нет и вы согласны слить этот код в **master**, можете просто отметить реквест одобрительным смайликом. :) 
 
+### 4. Логирование и обработка ошибок
+Если вы обрабатываете исключение (например, развертываете опционал), которое в ряде случаев может привести к ошибке, необходимо использовать метод reportError, например: 
+do {
+    try self.doWork();
+} catch let exception as NSException {
+    ExceptionHandlingHelper.reportError("doWork failed", exception: exception)
+}
+Параметр с исключением является опциональным.
+
+В случаях, когда вам нужно просто отследить какое-нибудь событие, используйте метод logEvent(event: String, title: String, content: String). В качестве события можно передавать одну из констант FirebaseAnalytics (Например, AnalyticsEventAppOpen и тп. Подробнее: https://firebase.google.com/docs/reference/swift/firebaseanalytics/api/reference/Constants). 

@@ -15,6 +15,7 @@ import YandexMobileMetrica
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
+
     
     private var userD = UserDefaultsOperation()
     
@@ -66,6 +67,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                 //TODO: Обработать ошибку подключения метрики
                 return
         }
+        configuration.logs = true
         YMMYandexMetrica.activate(with: configuration)
     }
 }
