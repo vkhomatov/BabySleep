@@ -34,17 +34,8 @@
 		92578BD7234E57D50001510D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92578BD6234E57D50001510D /* AppDelegate.swift */; };
 		92578BE0234E57D70001510D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 92578BDF234E57D70001510D /* Assets.xcassets */; };
 		92578BEE234E57D70001510D /* BabySleepTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92578BED234E57D70001510D /* BabySleepTests.swift */; };
-		9288319123873D4300641D0B /* CurrentStateCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9288319023873D4300641D0B /* CurrentStateCell.swift */; };
-		928831932389C70E00641D0B /* RegimeTableSectionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 928831922389C70E00641D0B /* RegimeTableSectionHeaderView.swift */; };
-		928831952389CE5A00641D0B /* Int.swift in Sources */ = {isa = PBXBuildFile; fileRef = 928831942389CE5A00641D0B /* Int.swift */; };
-		92E98B85237B56D5003DCC92 /* SleepRealm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92E98B84237B56D5003DCC92 /* SleepRealm.swift */; };
-		92E98B86237B56FC003DCC92 /* Sleep.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92095F9D2378BB0400A20BBE /* Sleep.swift */; };
-		92E98B87237B576C003DCC92 /* Aliases.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92095FA32378CA9700A20BBE /* Aliases.swift */; };
-		92E98B88237B577C003DCC92 /* Identifiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92095FA12378C4FD00A20BBE /* Identifiable.swift */; };
-		92E98B8A237B57F8003DCC92 /* ExceptionHandlingHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92E98B89237B57F8003DCC92 /* ExceptionHandlingHelper.swift */; };
-		92E98B8B237B5975003DCC92 /* SleepDataAccess.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92095FA62378CADF00A20BBE /* SleepDataAccess.swift */; };
-		92E98B8C237B5978003DCC92 /* SleepDataAccessDev.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92095F9F2378C2C700A20BBE /* SleepDataAccessDev.swift */; };
 		92F6C637234EA2B000B17DB4 /* RealmAccess.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92F6C636234EA2B000B17DB4 /* RealmAccess.swift */; };
+		92F6C63A234EA34800B17DB4 /* Identifiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92F6C639234EA34800B17DB4 /* Identifiable.swift */; };
 		92F6C63D234EA3BC00B17DB4 /* AlertCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92F6C63C234EA3BC00B17DB4 /* AlertCenter.swift */; };
 		92F6C63F234EA3F400B17DB4 /* NotificationAlertType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92F6C63E234EA3F400B17DB4 /* NotificationAlertType.swift */; };
 		92F6C647234EA83F00B17DB4 /* CoordinatorFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92F6C646234EA83F00B17DB4 /* CoordinatorFactory.swift */; };
@@ -53,32 +44,6 @@
 		92F6C64F234EAA7800B17DB4 /* CoordinatorFactoryDev.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92F6C64E234EAA7800B17DB4 /* CoordinatorFactoryDev.swift */; };
 		92F6C651234EAA8F00B17DB4 /* ViewControllerFactoryDev.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92F6C650234EAA8F00B17DB4 /* ViewControllerFactoryDev.swift */; };
 		92F6C653234EAAA100B17DB4 /* ViewModelFactoryDev.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92F6C652234EAAA100B17DB4 /* ViewModelFactoryDev.swift */; };
-		92F94CAE2381E1F400C44B48 /* RegimeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92F94CAD2381E1F400C44B48 /* RegimeView.swift */; };
-		92F94CB12381F7DA00C44B48 /* RegimeUnitCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92F94CB02381F7DA00C44B48 /* RegimeUnitCell.swift */; };
-		92F94CB42381F82800C44B48 /* CalendarSwitcherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92F94CB32381F82800C44B48 /* CalendarSwitcherView.swift */; };
-		92F94CB62381F84D00C44B48 /* DateStatisticView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92F94CB52381F84D00C44B48 /* DateStatisticView.swift */; };
-		92F94CB82381F8C900C44B48 /* RegimeTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92F94CB72381F8C900C44B48 /* RegimeTableView.swift */; };
-		92F94CBA2381F92000C44B48 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92F94CB92381F92000C44B48 /* UIColor.swift */; };
-		92F94CBC2381F9BF00C44B48 /* Double.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92F94CBB2381F9BF00C44B48 /* Double.swift */; };
-		B59006EB2379BE3F00C6D0BF /* ViewModelFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = B59006EA2379BE3F00C6D0BF /* ViewModelFactory.swift */; };
-		B59006ED2379BE4F00C6D0BF /* ViewModelFactoryDev.swift in Sources */ = {isa = PBXBuildFile; fileRef = B59006EC2379BE4F00C6D0BF /* ViewModelFactoryDev.swift */; };
-		B59006EF2379BE5C00C6D0BF /* ViewControllerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = B59006EE2379BE5C00C6D0BF /* ViewControllerFactory.swift */; };
-		B59006F12379BE6400C6D0BF /* ViewControllerFactoryDev.swift in Sources */ = {isa = PBXBuildFile; fileRef = B59006F02379BE6400C6D0BF /* ViewControllerFactoryDev.swift */; };
-		B5ED82732373A00F00B1C442 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5ED82682373A00F00B1C442 /* DetailViewController.swift */; };
-		B5ED82742373A00F00B1C442 /* DetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5ED82692373A00F00B1C442 /* DetailViewModel.swift */; };
-		B5ED82752373A00F00B1C442 /* RegimeListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5ED826B2373A00F00B1C442 /* RegimeListViewController.swift */; };
-		B5ED82762373A00F00B1C442 /* RegimeListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5ED826C2373A00F00B1C442 /* RegimeListViewModel.swift */; };
-		B5ED82772373A00F00B1C442 /* ReportViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5ED826E2373A00F00B1C442 /* ReportViewModel.swift */; };
-		B5ED82782373A00F00B1C442 /* ReportViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5ED826F2373A00F00B1C442 /* ReportViewController.swift */; };
-		B5ED82792373A00F00B1C442 /* TrainingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5ED82712373A00F00B1C442 /* TrainingViewController.swift */; };
-		B5ED827A2373A00F00B1C442 /* TrainingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5ED82722373A00F00B1C442 /* TrainingViewModel.swift */; };
-		B5ED82A12373A04600B1C442 /* BSCoordinatorFactoryDev.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5ED82872373A04500B1C442 /* BSCoordinatorFactoryDev.swift */; };
-		B5ED82A22373A04600B1C442 /* BSCoordinatorFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5ED82882373A04500B1C442 /* BSCoordinatorFactory.swift */; };
-		B5ED82B72373A07000B1C442 /* TrainingCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5ED82B22373A07000B1C442 /* TrainingCoordinator.swift */; };
-		B5ED82B82373A07000B1C442 /* ReportCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5ED82B32373A07000B1C442 /* ReportCoordinator.swift */; };
-		B5ED82B92373A07000B1C442 /* DetailCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5ED82B42373A07000B1C442 /* DetailCoordinator.swift */; };
-		B5ED82BA2373A07000B1C442 /* RegimeCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5ED82B52373A07000B1C442 /* RegimeCoordinator.swift */; };
-		B5ED82BB2373A07000B1C442 /* TabBarCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5ED82B62373A07000B1C442 /* TabBarCoordinator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -117,11 +82,6 @@
 		58A291F6237E496E00FCCA85 /* PageVCModelFour.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageVCModelFour.swift; sourceTree = "<group>"; };
 		58A291F823803B6800FCCA85 /* PageViewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageViewView.swift; sourceTree = "<group>"; };
 		8D1ACA6541F2205D401701CF /* Pods-BabySleepTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BabySleepTests.debug.xcconfig"; path = "Target Support Files/Pods-BabySleepTests/Pods-BabySleepTests.debug.xcconfig"; sourceTree = "<group>"; };
-		92095F9D2378BB0400A20BBE /* Sleep.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sleep.swift; sourceTree = "<group>"; };
-		92095F9F2378C2C700A20BBE /* SleepDataAccessDev.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SleepDataAccessDev.swift; sourceTree = "<group>"; };
-		92095FA12378C4FD00A20BBE /* Identifiable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Identifiable.swift; sourceTree = "<group>"; };
-		92095FA32378CA9700A20BBE /* Aliases.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Aliases.swift; sourceTree = "<group>"; };
-		92095FA62378CADF00A20BBE /* SleepDataAccess.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SleepDataAccess.swift; sourceTree = "<group>"; };
 		925749C22355DBB100E8D22B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		92578BD3234E57D50001510D /* BabySleep.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BabySleep.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		92578BD6234E57D50001510D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -130,12 +90,8 @@
 		92578BE9234E57D70001510D /* BabySleepTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BabySleepTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		92578BED234E57D70001510D /* BabySleepTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BabySleepTests.swift; sourceTree = "<group>"; };
 		92578BEF234E57D70001510D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9288319023873D4300641D0B /* CurrentStateCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentStateCell.swift; sourceTree = "<group>"; };
-		928831922389C70E00641D0B /* RegimeTableSectionHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegimeTableSectionHeaderView.swift; sourceTree = "<group>"; };
-		928831942389CE5A00641D0B /* Int.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Int.swift; sourceTree = "<group>"; };
-		92E98B84237B56D5003DCC92 /* SleepRealm.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SleepRealm.swift; sourceTree = "<group>"; };
-		92E98B89237B57F8003DCC92 /* ExceptionHandlingHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExceptionHandlingHelper.swift; sourceTree = "<group>"; };
 		92F6C636234EA2B000B17DB4 /* RealmAccess.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmAccess.swift; sourceTree = "<group>"; };
+		92F6C639234EA34800B17DB4 /* Identifiable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Identifiable.swift; sourceTree = "<group>"; };
 		92F6C63C234EA3BC00B17DB4 /* AlertCenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertCenter.swift; sourceTree = "<group>"; };
 		92F6C63E234EA3F400B17DB4 /* NotificationAlertType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationAlertType.swift; sourceTree = "<group>"; };
 		92F6C646234EA83F00B17DB4 /* CoordinatorFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorFactory.swift; sourceTree = "<group>"; };
@@ -144,33 +100,6 @@
 		92F6C64E234EAA7800B17DB4 /* CoordinatorFactoryDev.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorFactoryDev.swift; sourceTree = "<group>"; };
 		92F6C650234EAA8F00B17DB4 /* ViewControllerFactoryDev.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerFactoryDev.swift; sourceTree = "<group>"; };
 		92F6C652234EAAA100B17DB4 /* ViewModelFactoryDev.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelFactoryDev.swift; sourceTree = "<group>"; };
-		92F94CAD2381E1F400C44B48 /* RegimeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegimeView.swift; sourceTree = "<group>"; };
-		92F94CB02381F7DA00C44B48 /* RegimeUnitCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegimeUnitCell.swift; sourceTree = "<group>"; };
-		92F94CB32381F82800C44B48 /* CalendarSwitcherView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarSwitcherView.swift; sourceTree = "<group>"; };
-		92F94CB52381F84D00C44B48 /* DateStatisticView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateStatisticView.swift; sourceTree = "<group>"; };
-		92F94CB72381F8C900C44B48 /* RegimeTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegimeTableView.swift; sourceTree = "<group>"; };
-		92F94CB92381F92000C44B48 /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
-		92F94CBB2381F9BF00C44B48 /* Double.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Double.swift; sourceTree = "<group>"; };
-		B59006EA2379BE3F00C6D0BF /* ViewModelFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelFactory.swift; sourceTree = "<group>"; };
-		B59006EC2379BE4F00C6D0BF /* ViewModelFactoryDev.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelFactoryDev.swift; sourceTree = "<group>"; };
-		B59006EE2379BE5C00C6D0BF /* ViewControllerFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerFactory.swift; sourceTree = "<group>"; };
-		B59006F02379BE6400C6D0BF /* ViewControllerFactoryDev.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerFactoryDev.swift; sourceTree = "<group>"; };
-		B5ED82682373A00F00B1C442 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
-		B5ED82692373A00F00B1C442 /* DetailViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewModel.swift; sourceTree = "<group>"; };
-		B5ED826B2373A00F00B1C442 /* RegimeListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegimeListViewController.swift; sourceTree = "<group>"; };
-		B5ED826C2373A00F00B1C442 /* RegimeListViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegimeListViewModel.swift; sourceTree = "<group>"; };
-		B5ED826E2373A00F00B1C442 /* ReportViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReportViewModel.swift; sourceTree = "<group>"; };
-		B5ED826F2373A00F00B1C442 /* ReportViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReportViewController.swift; sourceTree = "<group>"; };
-		B5ED82712373A00F00B1C442 /* TrainingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrainingViewController.swift; sourceTree = "<group>"; };
-		B5ED82722373A00F00B1C442 /* TrainingViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrainingViewModel.swift; sourceTree = "<group>"; };
-		B5ED82872373A04500B1C442 /* BSCoordinatorFactoryDev.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BSCoordinatorFactoryDev.swift; sourceTree = "<group>"; };
-		B5ED82882373A04500B1C442 /* BSCoordinatorFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BSCoordinatorFactory.swift; sourceTree = "<group>"; };
-		B5ED82B22373A07000B1C442 /* TrainingCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrainingCoordinator.swift; sourceTree = "<group>"; };
-		B5ED82B32373A07000B1C442 /* ReportCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReportCoordinator.swift; sourceTree = "<group>"; };
-		B5ED82B42373A07000B1C442 /* DetailCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailCoordinator.swift; sourceTree = "<group>"; };
-		B5ED82B52373A07000B1C442 /* RegimeCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegimeCoordinator.swift; sourceTree = "<group>"; };
-		B5ED82B62373A07000B1C442 /* TabBarCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarCoordinator.swift; sourceTree = "<group>"; };
-		B9619A6C2364408300566520 /* ExceptionHandlingHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExceptionHandlingHelper.swift; sourceTree = "<group>"; };
 		DDBF3C7467726DE5D5174B17 /* Pods-BabySleep.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BabySleep.debug.xcconfig"; path = "Target Support Files/Pods-BabySleep/Pods-BabySleep.debug.xcconfig"; sourceTree = "<group>"; };
 		DF6852958183FD878FBB0D77 /* Pods_BabySleep.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BabySleep.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -240,20 +169,6 @@
 				5882146123957FE600EA1CEA /* NewEdgeCategoryModel.swift */,
 			);
 			path = NewEdgeCategoryViewController;
-		92095F9C2378B80C00A20BBE /* Realm Entities */ = {
-			isa = PBXGroup;
-			children = (
-				92E98B84237B56D5003DCC92 /* SleepRealm.swift */,
-			);
-			path = "Realm Entities";
-			sourceTree = "<group>";
-		};
-		92095FA52378CAB900A20BBE /* Protocols */ = {
-			isa = PBXGroup;
-			children = (
-				92095FA12378C4FD00A20BBE /* Identifiable.swift */,
-			);
-			path = Protocols;
 			sourceTree = "<group>";
 		};
 		92578BCA234E57D50001510D = {
@@ -264,7 +179,6 @@
 				92578BD4234E57D50001510D /* Products */,
 				C51B4055A7AEC9FAAB2BC223 /* Pods */,
 				E7D2155D74B20F0EB095438D /* Frameworks */,
-				92E98B83237B5628003DCC92 /* Recovered References */,
 			);
 			sourceTree = "<group>";
 		};
@@ -295,14 +209,6 @@
 			path = BabySleepTests;
 			sourceTree = "<group>";
 		};
-		92E98B83237B5628003DCC92 /* Recovered References */ = {
-			isa = PBXGroup;
-			children = (
-				B9619A6C2364408300566520 /* ExceptionHandlingHelper.swift */,
-			);
-			name = "Recovered References";
-			sourceTree = "<group>";
-		};
 		92F6C62C234E7C5600B17DB4 /* Application */ = {
 			isa = PBXGroup;
 			children = (
@@ -316,14 +222,13 @@
 		92F6C62D234E7C7800B17DB4 /* Common */ = {
 			isa = PBXGroup;
 			children = (
-				92095FA32378CA9700A20BBE /* Aliases.swift */,
+				5882145923957ACD00EA1CEA /* UserDefaults */,
 				92578BD6234E57D50001510D /* AppDelegate.swift */,
 				92F6C62E234E7C9B00B17DB4 /* Extensions */,
 				92F6C62F234E7CAF00B17DB4 /* Lib */,
 				92F6C632234E7D0800B17DB4 /* DBAccess */,
 				92F6C631234E7CF000B17DB4 /* Coordinators */,
 				92F6C630234E7CE200B17DB4 /* Factories */,
-				5882145923957ACD00EA1CEA /* UserDefaults */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -331,9 +236,6 @@
 		92F6C62E234E7C9B00B17DB4 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				92F94CB92381F92000C44B48 /* UIColor.swift */,
-				92F94CBB2381F9BF00C44B48 /* Double.swift */,
-				928831942389CE5A00641D0B /* Int.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -343,7 +245,6 @@
 			children = (
 				92F6C63B234EA36600B17DB4 /* Alert Center */,
 				92F6C636234EA2B000B17DB4 /* RealmAccess.swift */,
-				92E98B89237B57F8003DCC92 /* ExceptionHandlingHelper.swift */,
 			);
 			path = Lib;
 			sourceTree = "<group>";
@@ -351,9 +252,8 @@
 		92F6C630234E7CE200B17DB4 /* Factories */ = {
 			isa = PBXGroup;
 			children = (
-				B59006E92379BDF900C6D0BF /* ViewModel */,
-				B59006E82379BDEF00C6D0BF /* ViewController */,
-				B5ED82862373A04500B1C442 /* Coordinator */,
+				92F6C644234EA7E500B17DB4 /* Protocols */,
+				92F6C645234EA7FC00B17DB4 /* Develop Implementation */,
 			);
 			path = Factories;
 			sourceTree = "<group>";
@@ -363,11 +263,6 @@
 			children = (
 				58870112238D6F9C00227B27 /* RegistrationCoordinator.swift */,
 				58821463239581D400EA1CEA /* NewEdgeCategoryCoordinator.swift */,
-				B5ED82B42373A07000B1C442 /* DetailCoordinator.swift */,
-				B5ED82B52373A07000B1C442 /* RegimeCoordinator.swift */,
-				B5ED82B32373A07000B1C442 /* ReportCoordinator.swift */,
-				B5ED82B22373A07000B1C442 /* TrainingCoordinator.swift */,
-				B5ED82B62373A07000B1C442 /* TabBarCoordinator.swift */,
 			);
 			path = Coordinators;
 			sourceTree = "<group>";
@@ -375,9 +270,7 @@
 		92F6C632234E7D0800B17DB4 /* DBAccess */ = {
 			isa = PBXGroup;
 			children = (
-				92095FA52378CAB900A20BBE /* Protocols */,
-				92095FA62378CADF00A20BBE /* SleepDataAccess.swift */,
-				92095F9F2378C2C700A20BBE /* SleepDataAccessDev.swift */,
+				92F6C638234EA33A00B17DB4 /* Protocols */,
 			);
 			path = DBAccess;
 			sourceTree = "<group>";
@@ -385,8 +278,6 @@
 		92F6C633234E7D5900B17DB4 /* Entities */ = {
 			isa = PBXGroup;
 			children = (
-				92095F9D2378BB0400A20BBE /* Sleep.swift */,
-				92095F9C2378B80C00A20BBE /* Realm Entities */,
 			);
 			path = Entities;
 			sourceTree = "<group>";
@@ -397,10 +288,6 @@
 				5882145C23957F5F00EA1CEA /* NewEdgeCategoryViewController */,
 				580387B1237553B100AD6DA1 /* PageViewController */,
 				580387BA237B0D1A00AD6DA1 /* PageViewControllerTabs */,
-				B5ED82672373A00F00B1C442 /* DetailVC */,
-				B5ED826A2373A00F00B1C442 /* RegimeVC */,
-				B5ED826D2373A00F00B1C442 /* ReportVC */,
-				B5ED82702373A00F00B1C442 /* TrainingVC */,
 			);
 			path = Flow;
 			sourceTree = "<group>";
@@ -415,6 +302,14 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
+		92F6C638234EA33A00B17DB4 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				92F6C639234EA34800B17DB4 /* Identifiable.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
 		92F6C63B234EA36600B17DB4 /* Alert Center */ = {
 			isa = PBXGroup;
 			children = (
@@ -424,91 +319,24 @@
 			path = "Alert Center";
 			sourceTree = "<group>";
 		};
-		92F94CAF2381E20500C44B48 /* Views */ = {
-			isa = PBXGroup;
-			children = (
-				92F94CB22381F7E300C44B48 /* Cells */,
-				92F94CAD2381E1F400C44B48 /* RegimeView.swift */,
-				92F94CB32381F82800C44B48 /* CalendarSwitcherView.swift */,
-				92F94CB52381F84D00C44B48 /* DateStatisticView.swift */,
-				92F94CB72381F8C900C44B48 /* RegimeTableView.swift */,
-				928831922389C70E00641D0B /* RegimeTableSectionHeaderView.swift */,
-			);
-			path = Views;
-			sourceTree = "<group>";
-		};
-		92F94CB22381F7E300C44B48 /* Cells */ = {
-			isa = PBXGroup;
-			children = (
-				92F94CB02381F7DA00C44B48 /* RegimeUnitCell.swift */,
-				9288319023873D4300641D0B /* CurrentStateCell.swift */,
-			);
-			path = Cells;
-			sourceTree = "<group>";
-		};
 		92F6C644234EA7E500B17DB4 /* Protocols */ = {
-		B59006E82379BDEF00C6D0BF /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
-				B59006EE2379BE5C00C6D0BF /* ViewControllerFactory.swift */,
-				B59006F02379BE6400C6D0BF /* ViewControllerFactoryDev.swift */,
+				92F6C646234EA83F00B17DB4 /* CoordinatorFactory.swift */,
+				92F6C648234EA88700B17DB4 /* ViewControllerFactory.swift */,
+				92F6C64A234EA8DA00B17DB4 /* ViewModelFactory.swift */,
 			);
-			path = ViewController;
+			path = Protocols;
 			sourceTree = "<group>";
 		};
-		B59006E92379BDF900C6D0BF /* ViewModel */ = {
+		92F6C645234EA7FC00B17DB4 /* Develop Implementation */ = {
 			isa = PBXGroup;
 			children = (
-				B59006EA2379BE3F00C6D0BF /* ViewModelFactory.swift */,
-				B59006EC2379BE4F00C6D0BF /* ViewModelFactoryDev.swift */,
+				92F6C64E234EAA7800B17DB4 /* CoordinatorFactoryDev.swift */,
+				92F6C650234EAA8F00B17DB4 /* ViewControllerFactoryDev.swift */,
+				92F6C652234EAAA100B17DB4 /* ViewModelFactoryDev.swift */,
 			);
-			path = ViewModel;
-			sourceTree = "<group>";
-		};
-		B5ED82672373A00F00B1C442 /* DetailVC */ = {
-			isa = PBXGroup;
-			children = (
-				B5ED82682373A00F00B1C442 /* DetailViewController.swift */,
-				B5ED82692373A00F00B1C442 /* DetailViewModel.swift */,
-			);
-			path = DetailVC;
-			sourceTree = "<group>";
-		};
-		B5ED826A2373A00F00B1C442 /* RegimeVC */ = {
-			isa = PBXGroup;
-			children = (
-				92F94CAF2381E20500C44B48 /* Views */,
-				B5ED826B2373A00F00B1C442 /* RegimeListViewController.swift */,
-				B5ED826C2373A00F00B1C442 /* RegimeListViewModel.swift */,
-			);
-			path = RegimeVC;
-			sourceTree = "<group>";
-		};
-		B5ED826D2373A00F00B1C442 /* ReportVC */ = {
-			isa = PBXGroup;
-			children = (
-				B5ED826E2373A00F00B1C442 /* ReportViewModel.swift */,
-				B5ED826F2373A00F00B1C442 /* ReportViewController.swift */,
-			);
-			path = ReportVC;
-			sourceTree = "<group>";
-		};
-		B5ED82702373A00F00B1C442 /* TrainingVC */ = {
-			isa = PBXGroup;
-			children = (
-				B5ED82712373A00F00B1C442 /* TrainingViewController.swift */,
-				B5ED82722373A00F00B1C442 /* TrainingViewModel.swift */,
-			);
-			path = TrainingVC;
-			sourceTree = "<group>";
-		};
-		B5ED82862373A04500B1C442 /* Coordinator */ = {
-			isa = PBXGroup;
-			children = (
-				B5ED82872373A04500B1C442 /* BSCoordinatorFactoryDev.swift */,
-				B5ED82882373A04500B1C442 /* BSCoordinatorFactory.swift */,
-			);
-			path = Coordinator;
+			path = "Develop Implementation";
 			sourceTree = "<group>";
 		};
 		C51B4055A7AEC9FAAB2BC223 /* Pods */ = {
@@ -780,48 +608,10 @@
 				58A291F3237E492D00FCCA85 /* PageVCFour.swift in Sources */,
 				580387C4237BD7AB00AD6DA1 /* PageVCThree.swift in Sources */,
 				58870113238D6F9C00227B27 /* RegistrationCoordinator.swift in Sources */,
-				92F94CBC2381F9BF00C44B48 /* Double.swift in Sources */,
-				92E98B8A237B57F8003DCC92 /* ExceptionHandlingHelper.swift in Sources */,
-				92E98B8C237B5978003DCC92 /* SleepDataAccessDev.swift in Sources */,
-				B5ED82A12373A04600B1C442 /* BSCoordinatorFactoryDev.swift in Sources */,
-				B59006ED2379BE4F00C6D0BF /* ViewModelFactoryDev.swift in Sources */,
-				B59006EF2379BE5C00C6D0BF /* ViewControllerFactory.swift in Sources */,
-				92F94CB62381F84D00C44B48 /* DateStatisticView.swift in Sources */,
-				928831952389CE5A00641D0B /* Int.swift in Sources */,
-				B5ED82BB2373A07000B1C442 /* TabBarCoordinator.swift in Sources */,
-				B5ED82BA2373A07000B1C442 /* RegimeCoordinator.swift in Sources */,
-				B5ED82742373A00F00B1C442 /* DetailViewModel.swift in Sources */,
-				92F94CB12381F7DA00C44B48 /* RegimeUnitCell.swift in Sources */,
-				92E98B8B237B5975003DCC92 /* SleepDataAccess.swift in Sources */,
-				B5ED82A22373A04600B1C442 /* BSCoordinatorFactory.swift in Sources */,
-				B5ED82B82373A07000B1C442 /* ReportCoordinator.swift in Sources */,
-				92F94CBA2381F92000C44B48 /* UIColor.swift in Sources */,
-				92E98B85237B56D5003DCC92 /* SleepRealm.swift in Sources */,
-				B5ED82732373A00F00B1C442 /* DetailViewController.swift in Sources */,
-				928831932389C70E00641D0B /* RegimeTableSectionHeaderView.swift in Sources */,
-				B5ED82B72373A07000B1C442 /* TrainingCoordinator.swift in Sources */,
-				B5ED827A2373A00F00B1C442 /* TrainingViewModel.swift in Sources */,
-				B5ED82782373A00F00B1C442 /* ReportViewController.swift in Sources */,
-				92E98B87237B576C003DCC92 /* Aliases.swift in Sources */,
-				9288319123873D4300641D0B /* CurrentStateCell.swift in Sources */,
-				92F6C637234EA2B000B17DB4 /* RealmAccess.swift in Sources */,
-				B5ED82752373A00F00B1C442 /* RegimeListViewController.swift in Sources */,
-				B5ED82B92373A07000B1C442 /* DetailCoordinator.swift in Sources */,
-				92F94CB42381F82800C44B48 /* CalendarSwitcherView.swift in Sources */,
-				92578BD7234E57D50001510D /* AppDelegate.swift in Sources */,
 				92F6C63D234EA3BC00B17DB4 /* AlertCenter.swift in Sources */,
-				B59006EB2379BE3F00C6D0BF /* ViewModelFactory.swift in Sources */,
-				B5ED82792373A00F00B1C442 /* TrainingViewController.swift in Sources */,
-				92E98B86237B56FC003DCC92 /* Sleep.swift in Sources */,
-				B59006F12379BE6400C6D0BF /* ViewControllerFactoryDev.swift in Sources */,
-				B5ED82762373A00F00B1C442 /* RegimeListViewModel.swift in Sources */,
-				92E98B88237B577C003DCC92 /* Identifiable.swift in Sources */,
-				B5ED82772373A00F00B1C442 /* ReportViewModel.swift in Sources */,
 				92F6C63F234EA3F400B17DB4 /* NotificationAlertType.swift in Sources */,
 				92F6C647234EA83F00B17DB4 /* CoordinatorFactory.swift in Sources */,
 				580387C6237BDDC100AD6DA1 /* PageVCViewTwo.swift in Sources */,
-				92F94CAE2381E1F400C44B48 /* RegimeView.swift in Sources */,
-				92F94CB82381F8C900C44B48 /* RegimeTableView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -964,7 +754,6 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = Y6G74A59K6;
 				INFOPLIST_FILE = BabySleep/Resources/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
